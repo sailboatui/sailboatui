@@ -1,2 +1,2 @@
-# sailboatui
+# SailboatUI
 Tailwind CSS components
