@@ -1,9 +1,7 @@
 # SailboatUI
-Tailwind CSS components
 
+A modern UI framework for Tailwind CSS
 
 ## Components
 
 ### [Button](https://play.tailwindcss.com/UlgClTBqbl)
-
-![Button](static/img/button.png)

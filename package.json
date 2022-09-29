@@ -1,0 +1,40 @@
+{
+  "name": "sailboatui",
+  "version": "0.1.1",
+  "description": "A modern UI framework for Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css --watch --minify --postcss postcss.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sailboatui/sailboatui.git"
+  },
+  "keywords": [
+    "sailboatui",
+    "html",
+    "css",
+    "javascript",
+    "tailwindcss",
+    "tailwind components",
+    "tailwind elements",
+    "tailwind library",
+    "tailwind sections",
+    "tailwind css",
+    "tailwind ui"
+  ],
+  "author": "lvwzhen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sailboatui/sailboatui/issues"
+  },
+  "homepage": "https://github.com/sailboatui/sailboatui#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.8"
+  }
+}

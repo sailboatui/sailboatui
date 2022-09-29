@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button - SailboatUI</title>
+    <link rel="stylesheet" href="../assets/css/tailwind.css" />
+  </head>
+  <body>
+    <div class="p-20">
+      <h1 class="text-xl font-bold">Button</h1>
+      <hr class="my-5" />
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Default</h2>
+        <div class="flex flex-wrap space-x-2">
+          <button
+            type="button"
+            class="rounded-lg border border-blue-600 bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
+          >
+            Blue
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-900 hover:bg-gray-100"
+          >
+            White
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-green-500 bg-green-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-green-600"
+          >
+            Green
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-yellow-500 bg-yellow-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-yellow-600"
+          >
+            Yellow
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-red-500 bg-red-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-red-600"
+          >
+            Red
+          </button>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="my-2 text-lg font-medium">Radius</h2>
+        <div class="flex flex-wrap space-x-2">
+          <button
+            type="button"
+            class="rounded-lg border border-blue-600 bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
+          >
+            Rounded
+          </button>
+          <button
+            type="button"
+            class="border border-blue-600 bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
+          >
+            Square
+          </button>
+          <button
+            type="button"
+            class="rounded-full border border-blue-600 bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
+          >
+            Full Rounded
+          </button>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="my-2 text-lg font-medium">Size</h2>
+        <div class="space-x-2">
+          <button
+            type="button"
+            class="rounded-lg border border-blue-600 bg-blue-600 px-2 py-1 text-center text-xs font-medium text-white hover:bg-blue-800"
+          >
+            Extra small button
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-blue-600 bg-blue-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800"
+          >
+            Small button
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-blue-600 bg-blue-600 px-5 py-3 text-center text-sm font-medium text-white hover:bg-blue-800"
+          >
+            Base button
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-blue-600 bg-blue-600 px-6 py-4 text-center text-lg font-medium text-white hover:bg-blue-800"
+          >
+            Large button
+          </button>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="my-2 text-lg font-medium">Icon</h2>
+        <div class="flex flex-wrap space-x-2">
+          <button
+            type="button"
+            class="flex items-center rounded-lg border border-blue-600 bg-blue-600 px-5 py-3 text-center text-sm font-medium text-white hover:bg-blue-800"
+          >
+            Button
+            <svg
+              class="ml-1 h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="flex items-center rounded-lg border border-blue-600 bg-blue-600 px-5 py-3 text-center text-sm font-medium text-white hover:bg-blue-800"
+          >
+            <svg
+              class="mr-1 h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Button
+          </button>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="my-2 text-lg font-medium">Disable</h2>
+        <div class="flex flex-wrap space-x-2">
+          <button
+            type="button"
+            class="cursor-not-allowed rounded-lg border border-blue-600 border-opacity-50 bg-blue-600 bg-opacity-50 px-5 py-2.5 text-center text-sm font-medium text-white"
+            disabled
+          >
+            Blue
+          </button>
+          <button
+            type="button"
+            class="cursor-not-allowed rounded-lg border border-gray-300 border-opacity-50 bg-white bg-opacity-50 px-5 py-2.5 text-center text-sm font-medium text-gray-900"
+            disabled
+          >
+            White
+          </button>
+          <button
+            type="button"
+            class="cursor-not-allowed rounded-lg border border-green-500 border-opacity-50 bg-green-500 bg-opacity-50 px-5 py-2.5 text-center text-sm font-medium text-white"
+            disabled
+          >
+            Green
+          </button>
+          <button
+            type="button"
+            class="cursor-not-allowed rounded-lg border border-yellow-500 border-opacity-50 bg-yellow-500 bg-opacity-50 px-5 py-2.5 text-center text-sm font-medium text-white"
+            disabled
+          >
+            Yellow
+          </button>
+          <button
+            type="button"
+            class="cursor-not-allowed rounded-lg border border-red-500 border-opacity-50 bg-red-500 bg-opacity-50 px-5 py-2.5 text-center text-sm font-medium text-white"
+            disabled
+          >
+            Red
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
