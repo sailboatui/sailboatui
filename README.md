@@ -4,4 +4,5 @@ A modern UI framework for Tailwind CSS
 
 ## Components
 
-### [Button](https://play.tailwindcss.com/UlgClTBqbl)
+- [Alert](https://sailboatui.com/examples/alert)
+- [Button](https://sailboatui.com/examples/button)
