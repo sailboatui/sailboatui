@@ -1,6 +1,16 @@
-# SailboatUI
+<p align="center">
+  <a href="https://sailboatui.com/#gh-light-mode-only" target="_blank">
+    <img src="./.github/logo-light.svg" width="330" height="70" alt="SailboatUI">
+  </a>
+  <a href="https://sailboatui.com/#gh-dark-mode-only" target="_blank">
+    <img src="./.github/logo-dark.svg" width="330" height="70" alt="SailboatUI">
+  </a>
+</p>
 
-A modern UI framework for Tailwind CSS
+<p align="center">
+  A modern UI framework for Tailwind CSS
+</p>
+
 
 ## Components
 
