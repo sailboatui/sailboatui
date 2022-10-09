@@ -17,3 +17,4 @@
 - [Alert](https://sailboatui.com/examples/alert)
 - [Badge](https://sailboatui.com/examples/badge)
 - [Button](https://sailboatui.com/examples/button)
+- [Breadcrumbs](https://sailboatui.com/examples/breadcrumbs)
