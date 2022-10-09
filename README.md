@@ -11,10 +11,9 @@
   A modern UI framework for Tailwind CSS
 </p>
 
-
 ## Components
 
 - [Alert](https://sailboatui.com/examples/alert)
 - [Badge](https://sailboatui.com/examples/badge)
 - [Button](https://sailboatui.com/examples/button)
-- [Breadcrumbs](https://sailboatui.com/examples/breadcrumbs)
+- [Breadcrumb](https://sailboatui.com/examples/breadcrumb)
