@@ -14,6 +14,7 @@
 ## Components
 
 - [Alert](https://sailboatui.com/examples/alert)
+- [Avatar](https://sailboatui.com/examples/avatar)
 - [Badge](https://sailboatui.com/examples/badge)
 - [Button](https://sailboatui.com/examples/button)
 - [Breadcrumb](https://sailboatui.com/examples/breadcrumb)
