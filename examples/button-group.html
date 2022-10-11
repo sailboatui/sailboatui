@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Group - SailboatUI</title>
+    <link rel="stylesheet" href="../assets/css/tailwind.css" />
+  </head>
+  <body>
+    <div class="container py-20 mx-auto">
+      <h1 class="text-xl font-bold">Button Group</h1>
+      <hr class="my-5" />
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Default</h2>
+        <div class="inline-flex overflow-hidden border border-gray-300 divide-x divide-gray-300 rounded-lg -space-x-0">
+          <button
+            type="button"
+            class="bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-500 hover:bg-gray-100"
+          >
+            One
+          </button>
+          <button
+            type="button"
+            class="bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-500 hover:bg-gray-100"
+          >
+            Two
+          </button>
+          <button
+            type="button"
+            class="bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-500 hover:bg-gray-100"
+          >
+            Three
+          </button>
+        </div>
+      </div>
+
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With icon</h2>
+        <div class="inline-flex overflow-hidden border border-gray-300 divide-x divide-gray-300 rounded-lg -space-x-0">
+          <button
+            type="button"
+            class="inline-flex items-center bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-500 hover:bg-gray-100"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-4 h-4 mr-2 fill-current"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            One
+          </button>
+          <button
+            type="button"
+            class="inline-flex items-center bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-500 hover:bg-gray-100"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-4 h-4 mr-2 fill-current"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"
+              ></path>
+            </svg>
+            Two
+          </button>
+          <button
+            type="button"
+            class="inline-flex items-center bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-500 hover:bg-gray-100"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-4 h-4 mr-2 fill-current"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            Three
+          </button>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Only icon</h2>
+        <div class="inline-flex overflow-hidden border border-gray-300 divide-x divide-gray-300 rounded-lg -space-x-0">
+          <button
+            type="button"
+            class="bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-500 hover:bg-gray-100"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+              <path
+                fill-rule="evenodd"
+                d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-500 hover:bg-gray-100"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+              <path
+                fill-rule="evenodd"
+                d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
