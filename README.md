@@ -18,3 +18,4 @@
 - [Badge](https://sailboatui.com/examples/badge)
 - [Button](https://sailboatui.com/examples/button)
 - [Breadcrumb](https://sailboatui.com/examples/breadcrumb)
+- [Divider](https://sailboatui.com/examples/divider)
