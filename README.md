@@ -17,5 +17,7 @@
 - [Avatar](https://sailboatui.com/examples/avatar)
 - [Badge](https://sailboatui.com/examples/badge)
 - [Button](https://sailboatui.com/examples/button)
+- [Button Group](https://sailboatui.com/examples/button-group)
 - [Breadcrumb](https://sailboatui.com/examples/breadcrumb)
 - [Divider](https://sailboatui.com/examples/divider)
+- [Progress](https://sailboatui.com/examples/progress)
