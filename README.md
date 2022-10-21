@@ -22,3 +22,4 @@
 - [Divider](https://sailboatui.com/examples/divider)
 - [Pagination](https://sailboatui.com/examples/pagination)
 - [Progress](https://sailboatui.com/examples/progress)
+- [Notification](https://sailboatui.com/examples/notification)
