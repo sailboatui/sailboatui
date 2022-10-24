@@ -20,6 +20,7 @@
 - [Button](https://sailboatui.com/examples/button)
 - [Button Group](https://sailboatui.com/examples/button-group)
 - [Divider](https://sailboatui.com/examples/divider)
+- [Notification](https://sailboatui.com/examples/notification)
 - [Pagination](https://sailboatui.com/examples/pagination)
 - [Progress](https://sailboatui.com/examples/progress)
-- [Notification](https://sailboatui.com/examples/notification)
+- [Input](https://sailboatui.com/examples/input)

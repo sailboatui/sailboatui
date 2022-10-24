@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/sailboatui/sailboatui#readme",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.12",
     "cssnano": "^5.1.13",
     "postcss": "^8.4.16",

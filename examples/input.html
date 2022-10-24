@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input - SailboatUI</title>
+    <link rel="stylesheet" href="../assets/css/tailwind.css" />
+  </head>
+  <body>
+    <div class="container mx-auto py-20">
+      <h1 class="text-xl font-bold">Input</h1>
+      <hr class="my-5" />
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Default</h2>
+        <div class="max-w-xs">
+          <input
+            type="text"
+            class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+            placeholder="Name"
+          />
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With label</h2>
+        <div class="max-w-xs">
+          <div>
+            <label for="example1" class="mb-1 block text-sm font-medium text-gray-700">Email</label>
+            <input
+              type="email"
+              id="example1"
+              class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              placeholder="you@email.com"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With help text</h2>
+        <div class="max-w-xs">
+          <div>
+            <label
+              for="example2"
+              class="mb-1 block text-sm font-medium text-gray-700 after:ml-0.5 after:text-red-500 after:content-['*']"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="example2"
+              class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              placeholder="you@email.com"
+            />
+            <p class="tex-sm mt-1 text-gray-500">This is a help message.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With validation error</h2>
+        <div class="max-w-xs">
+          <div>
+            <label
+              for="example3"
+              class="mb-1 block text-sm font-medium text-gray-700 after:ml-0.5 after:text-red-500 after:content-['*']"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="example3"
+              class="block w-full rounded-md border-red-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50"
+              placeholder="you@email.com"
+            />
+            <p class="tex-sm mt-1 text-red-500">This is a error message.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Disable</h2>
+        <div class="max-w-xs">
+          <input
+            type="text"
+            disabled
+            value="Steve Jobs"
+            class="block w-full rounded-md border-gray-300 bg-gray-50 text-gray-500 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+            placeholder="Full name"
+          />
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With left icon</h2>
+        <div class="max-w-xs">
+          <div>
+            <label for="example4" class="mb-1 block text-sm font-medium text-gray-700">Email</label>
+            <div class="relative">
+              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-2.5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-5 w-5 text-gray-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+              </div>
+              <input
+                type="email"
+                id="example4"
+                class="block w-full rounded-md border-gray-300 pl-10 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                placeholder="you@email.com"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With right icon</h2>
+        <div class="max-w-xs">
+          <div>
+            <label for="example5" class="mb-1 block text-sm font-medium text-gray-700">Email</label>
+            <div class="relative">
+              <div class="absolute inset-y-0 right-0 flex items-center px-2.5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-5 w-5 text-gray-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="email"
+                id="example5"
+                class="block w-full rounded-md border-gray-300 pr-10 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                placeholder="you@email.com"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With inline add-on</h2>
+        <div class="max-w-xs">
+          <div>
+            <label for="example6" class="mb-1 block text-sm font-medium text-gray-700">Price</label>
+            <div class="relative">
+              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-2.5 text-gray-500">$</div>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-gray-500">
+                USD
+              </div>
+              <input
+                type="email"
+                id="example6"
+                class="block w-full rounded-md border-gray-300 px-8 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                placeholder="0.00"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With inline select</h2>
+        <div class="max-w-xs space-y-5">
+          <div>
+            <label for="example7" class="mb-1 block text-sm font-medium text-gray-700">Phone number</label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 flex items-center text-gray-500">
+                <label for="currency" class="sr-only">Currency</label>
+                <select
+                  id="currency"
+                  id="currency"
+                  class="h-full rounded-md border-transparent bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                >
+                  <option>US</option>
+                  <option>CA</option>
+                  <option>JP</option>
+                  <option>CN</option>
+                </select>
+              </div>
+              <div class="absolute inset-y-0 right-0 flex items-center px-2.5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-5 w-5 text-gray-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="example7"
+                class="block w-full rounded-md border-gray-300 pl-16 pr-10 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                placeholder="+1 (666) 000-0000"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="example8" class="mb-1 block text-sm font-medium text-gray-700">Price</label>
+            <div class="relative">
+              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-2.5 text-gray-500">$</div>
+              <div class="absolute inset-y-0 right-0 flex items-center px-2.5 text-gray-500">
+                <label for="currency" class="sr-only">Currency</label>
+                <select
+                  id="currency"
+                  id="currency"
+                  class="h-full rounded-md border-transparent bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                >
+                  <option>USD</option>
+                  <option>CAD</option>
+                  <option>EUR</option>
+                </select>
+              </div>
+              <input
+                type="text"
+                id="example8"
+                class="block w-full rounded-md border-gray-300 pl-8 pr-16 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                placeholder="0.00"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With inset label</h2>
+        <div class="max-w-xs">
+          <div>
+            <div class="relative">
+              <div class="absolute top-2.5 left-3 flex items-center text-gray-500">
+                <label for="example9" class="block text-xs font-medium text-gray-700">Full name</label>
+              </div>
+              <input
+                type="text"
+                id="example9"
+                class="block w-full rounded-md border-gray-300 pt-6 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                placeholder="You name"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With float label</h2>
+        <div class="max-w-xs">
+          <div>
+            <div class="relative">
+              <input
+                type="text"
+                id="example10"
+                placeholder=" "
+                class="peer block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              />
+              <label
+                for="example10"
+                class="peer-focus:base absolute left-2 top-0 z-10 -translate-y-2 transform bg-white px-1 text-xs text-gray-500 transition-all peer-placeholder-shown:translate-y-3 peer-placeholder-shown:text-sm peer-focus:-translate-y-2 peer-focus:text-xs"
+                >Full name</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Size</h2>
+        <div class="max-w-xs space-y-5">
+          <input
+            type="text"
+            class="block w-full rounded-md border-gray-300 text-xs shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+            placeholder="Small"
+          />
+          <input
+            type="text"
+            class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+            placeholder="Normal"
+          />
+          <input
+            type="text"
+            class="block w-full rounded-md border-gray-300 py-3 text-xl shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+            placeholder="Large"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
