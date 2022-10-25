@@ -173,7 +173,7 @@
         <h2 class="mb-2 text-lg font-medium">With inline label</h2>
         <div class="max-w-xs">
           <div>
-            <label for="example6" class="mb-1 block text-sm font-medium text-gray-700">Website</label>
+            <label for="example7" class="mb-1 block text-sm font-medium text-gray-700">Website</label>
             <div class="flex">
               <div
                 class="inset-y-0 left-0 flex items-center rounded-md rounded-r-none border border-r-0 border-gray-300 bg-gray-100 px-2.5 text-gray-700"
@@ -182,7 +182,7 @@
               </div>
               <input
                 type="url"
-                id="example6"
+                id="example7"
                 class="block w-full rounded-md rounded-l-none border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 placeholder="example.com"
               />
@@ -194,16 +194,17 @@
         <h2 class="mb-2 text-lg font-medium">With inline button</h2>
         <div class="max-w-xs">
           <div>
-            <label for="example6" class="mb-1 block text-sm font-medium text-gray-700">Url</label>
+            <label for="example8" class="mb-1 block text-sm font-medium text-gray-700">Url</label>
             <div class="flex">
               <input
                 type="url"
-                id="example6"
+                id="example8"
                 class="z-10 block w-full rounded-md rounded-r-none border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 placeholder="example.com"
                 value="https://sailboatui.com/"
               />
               <button
+                for="example8"
                 class="flex items-center space-x-1 rounded-md rounded-l-none border border-l-0 border-gray-300 px-2.5 text-gray-700 hover:bg-gray-100"
               >
                 <svg
@@ -230,11 +231,11 @@
         <h2 class="mb-2 text-lg font-medium">With keyboard shortcut</h2>
         <div class="max-w-xs">
           <div>
-            <div class="relative">
+            <div class="group relative">
               <input
                 type="text"
-                id="example6"
-                class="block w-full rounded-md border-gray-300 px-10 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                id="example9"
+                class="block w-full rounded-md border-gray-300 px-10 shadow-sm transition-all hover:bg-gray-50 focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 placeholder="Quick search..."
               />
               <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-2.5 text-gray-500">
@@ -247,7 +248,10 @@
                 </svg>
               </div>
               <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5">
-                <span class="rounded border px-1.5 text-sm text-gray-400 shadow-sm"><kbd>⌘</kbd> <kbd>K</kbd></span>
+                <span
+                  class="rounded border px-1.5 text-sm text-gray-400 shadow-sm transition-all group-hover:border-blue-500 group-hover:text-blue-500"
+                  ><kbd>⌘</kbd> <kbd>K</kbd></span
+                >
               </div>
             </div>
           </div>
@@ -257,14 +261,14 @@
         <h2 class="mb-2 text-lg font-medium">With inline select</h2>
         <div class="max-w-xs space-y-5">
           <div>
-            <label for="example7" class="mb-1 block text-sm font-medium text-gray-700">Phone number</label>
+            <label for="example10" class="mb-1 block text-sm font-medium text-gray-700">Phone number</label>
             <div class="relative">
               <div class="absolute inset-y-0 left-0 flex items-center text-gray-500">
                 <label for="currency" class="sr-only">Currency</label>
                 <select
                   id="currency"
                   id="currency"
-                  class="h-full rounded-md border-transparent bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  class="h-full rounded-md border-transparent bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                 >
                   <option>US</option>
                   <option>CA</option>
@@ -290,22 +294,22 @@
               </div>
               <input
                 type="text"
-                id="example7"
+                id="example10"
                 class="block w-full rounded-md border-gray-300 pl-16 pr-10 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 placeholder="+1 (666) 000-0000"
               />
             </div>
           </div>
           <div>
-            <label for="example8" class="mb-1 block text-sm font-medium text-gray-700">Price</label>
+            <label for="example11" class="mb-1 block text-sm font-medium text-gray-700">Price</label>
             <div class="relative">
               <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-2.5 text-gray-500">$</div>
-              <div class="absolute inset-y-0 right-0 flex items-center px-2.5 text-gray-500">
+              <div class="absolute inset-y-0 right-0 flex items-center text-gray-500">
                 <label for="currency" class="sr-only">Currency</label>
                 <select
                   id="currency"
                   id="currency"
-                  class="h-full rounded-md border-transparent bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  class="h-full rounded-md border-transparent bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                 >
                   <option>USD</option>
                   <option>CAD</option>
@@ -314,7 +318,7 @@
               </div>
               <input
                 type="text"
-                id="example8"
+                id="example11"
                 class="block w-full rounded-md border-gray-300 pl-8 pr-16 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 placeholder="0.00"
               />
@@ -328,11 +332,11 @@
           <div>
             <div class="relative">
               <div class="absolute top-2.5 left-3 flex items-center text-gray-500">
-                <label for="example9" class="block text-xs font-medium text-gray-700">Full name</label>
+                <label for="example12" class="block text-xs font-medium text-gray-700">Full name</label>
               </div>
               <input
                 type="text"
-                id="example9"
+                id="example12"
                 class="block w-full rounded-md border-gray-300 pt-6 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 placeholder="You name"
               />
@@ -347,12 +351,12 @@
             <div class="relative">
               <input
                 type="text"
-                id="example10"
+                id="example13"
                 placeholder=" "
                 class="peer block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
               />
               <label
-                for="example10"
+                for="example13"
                 class="peer-focus:base absolute left-2 top-0 z-10 -translate-y-2 transform bg-white px-1 text-xs text-gray-500 transition-all peer-placeholder-shown:translate-y-3 peer-placeholder-shown:text-sm peer-focus:-translate-y-2 peer-focus:text-xs"
                 >Full name</label
               >

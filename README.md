@@ -25,3 +25,4 @@
 - [Pagination](https://sailboatui.com/examples/pagination)
 - [Progress](https://sailboatui.com/examples/progress)
 - [Select](https://sailboatui.com/examples/select)
+- [Textarea](https://sailboatui.com/examples/textarea)
