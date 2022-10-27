@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://sailboatui.com/#gh-light-mode-only" target="_blank">
-    <img src="./.github/logo-light.svg" width="330" height="70" alt="SailboatUI">
+    <img src="./.github/logo-light.svg" width="330" height="70" alt="Sailboat UI">
   </a>
   <a href="https://sailboatui.com/#gh-dark-mode-only" target="_blank">
-    <img src="./.github/logo-dark.svg" width="330" height="70" alt="SailboatUI">
+    <img src="./.github/logo-dark.svg" width="330" height="70" alt="Sailboat UI">
   </a>
 </p>
 
@@ -25,7 +25,7 @@
 - [Notification](https://sailboatui.com/examples/notification)
 - [Pagination](https://sailboatui.com/examples/pagination)
 - [Progress](https://sailboatui.com/examples/progress)
-- [Select](https://sailboatui.com/examples/select)
 - [Radio](https://sailboatui.com/examples/radio)
+- [Select](https://sailboatui.com/examples/select)
 - [Textarea](https://sailboatui.com/examples/textarea)
 - [Toggle](https://sailboatui.com/examples/toggle)
