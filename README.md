@@ -22,6 +22,7 @@
 - [Checkbox](https://sailboatui.com/examples/checkbox)
 - [Divider](https://sailboatui.com/examples/divider)
 - [Input](https://sailboatui.com/examples/input)
+- [File input](https://sailboatui.com/examples/file-input)
 - [Notification](https://sailboatui.com/examples/notification)
 - [Pagination](https://sailboatui.com/examples/pagination)
 - [Progress](https://sailboatui.com/examples/progress)
