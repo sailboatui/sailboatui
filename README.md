@@ -21,6 +21,7 @@
 - [Button Group](https://sailboatui.com/examples/button-group)
 - [Checkbox](https://sailboatui.com/examples/checkbox)
 - [Divider](https://sailboatui.com/examples/divider)
+- [Dropdown](https://sailboatui.com/examples/dropdown)
 - [Input](https://sailboatui.com/examples/input)
 - [File input](https://sailboatui.com/examples/file-input)
 - [Notification](https://sailboatui.com/examples/notification)
