@@ -30,4 +30,5 @@
 - [Radio](https://sailboatui.com/examples/radio)
 - [Select](https://sailboatui.com/examples/select)
 - [Textarea](https://sailboatui.com/examples/textarea)
+- [Tab](https://sailboatui.com/examples/tab)
 - [Toggle](https://sailboatui.com/examples/toggle)
