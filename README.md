@@ -13,6 +13,7 @@
 
 ## Components
 
+- [Accordion](https://sailboatui.com/examples/accordion)
 - [Alert](https://sailboatui.com/examples/alert)
 - [Avatar](https://sailboatui.com/examples/avatar)
 - [Badge](https://sailboatui.com/examples/badge)
