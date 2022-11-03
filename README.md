@@ -25,6 +25,7 @@
 - [Dropdown](https://sailboatui.com/examples/dropdown)
 - [Input](https://sailboatui.com/examples/input)
 - [File input](https://sailboatui.com/examples/file-input)
+- [Modal](https://sailboatui.com/examples/modal)
 - [Notification](https://sailboatui.com/examples/notification)
 - [Pagination](https://sailboatui.com/examples/pagination)
 - [Progress](https://sailboatui.com/examples/progress)
