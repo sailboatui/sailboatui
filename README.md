@@ -33,4 +33,6 @@
 - [Select](https://sailboatui.com/examples/select)
 - [Textarea](https://sailboatui.com/examples/textarea)
 - [Tab](https://sailboatui.com/examples/tab)
+- [Table](https://sailboatui.com/examples/table)
 - [Toggle](https://sailboatui.com/examples/toggle)
+- [Tooltip](https://sailboatui.com/examples/tooltip)
