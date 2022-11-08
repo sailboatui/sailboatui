@@ -20,6 +20,7 @@
 - [Breadcrumb](https://sailboatui.com/examples/breadcrumb)
 - [Button](https://sailboatui.com/examples/button)
 - [Button Group](https://sailboatui.com/examples/button-group)
+- [Card](https://sailboatui.com/examples/card)
 - [Checkbox](https://sailboatui.com/examples/checkbox)
 - [Divider](https://sailboatui.com/examples/divider)
 - [Dropdown](https://sailboatui.com/examples/dropdown)

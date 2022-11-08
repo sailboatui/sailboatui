@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card - SailboatUI</title>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/dist/tippy.css" />
+    <link rel="stylesheet" href="../assets/css/tailwind.css" />
+    <script src="https://unpkg.com/@ryangjchandler/alpine-tooltip@1.2.0/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+  </head>
+  <body class="">
+    <div class="container mx-auto py-20">
+      <h1 class="text-xl font-bold">Card</h1>
+      <hr class="my-5" />
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Simple</h2>
+        <div class="max-w-md rounded-lg bg-white shadow">
+          <div class="p-4">
+            <h3 class="text-xl font-medium text-gray-900">Migrating to Linear 101</h3>
+            <p class="mt-1 text-gray-500">
+              Linear helps streamline software projects, sprints, tasks, and bug tracking.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With photo</h2>
+        <div class="max-w-md overflow-hidden rounded-lg bg-white shadow">
+          <img
+            src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            class="aspect-video w-full object-cover"
+            alt=""
+          />
+          <div class="p-4">
+            <p class="mb-1 text-sm text-primary-500">Andrea Felsted • <time>18 Nov 2022</time></p>
+            <h3 class="text-xl font-medium text-gray-900">Migrating to Linear 101</h3>
+            <p class="mt-1 text-gray-500">
+              Linear helps streamline software projects, sprints, tasks, and bug tracking.
+            </p>
+            <div class="mt-4 flex gap-2">
+              <span
+                class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600"
+              >
+                Design
+              </span>
+              <span
+                class="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-2 py-1 text-xs font-semibold text-indigo-600"
+              >
+                Product
+              </span>
+              <span
+                class="inline-flex items-center gap-1 rounded-full bg-orange-50 px-2 py-1 text-xs font-semibold text-orange-600"
+              >
+                Develop
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With photo</h2>
+        <div class="flex max-w-md overflow-hidden rounded-lg bg-white shadow">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+              class="h-full w-36 object-cover"
+              alt=""
+            />
+          </div>
+          <div class="flex-1 p-4">
+            <p class="mb-1 text-sm text-primary-500">Andrea Felsted • <time>18 Nov 2022</time></p>
+            <h3 class="text-xl font-medium text-gray-900">Migrating to Linear 101</h3>
+            <p class="mt-1 text-gray-500">
+              Linear helps streamline software projects, sprints, tasks, and bug tracking.
+            </p>
+            <div class="mt-4 flex gap-2">
+              <span
+                class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600"
+              >
+                Design
+              </span>
+              <span
+                class="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-2 py-1 text-xs font-semibold text-indigo-600"
+              >
+                Product
+              </span>
+              <span
+                class="inline-flex items-center gap-1 rounded-full bg-orange-50 px-2 py-1 text-xs font-semibold text-orange-600"
+              >
+                Develop
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Background</h2>
+        <div class="relative max-w-md overflow-hidden rounded-lg bg-white shadow">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              class="w-full object-cover"
+              alt=""
+            />
+          </div>
+          <div class="absolute inset-0 z-10 bg-gradient-to-t from-black"></div>
+          <div class="absolute inset-x-0 bottom-0 z-20 p-4">
+            <p class="mb-1 text-sm text-white text-opacity-80">Andrea Felsted • <time>18 Nov 2022</time></p>
+            <h3 class="text-xl font-medium text-white">Migrating to Linear 101</h3>
+            <p class="mt-1 text-white text-opacity-80">
+              Linear helps streamline software projects, sprints, tasks, and bug tracking.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">List</h2>
+        <div class="max-w-md overflow-hidden rounded-lg bg-white shadow">
+          <ul class="divide-y divide-gray-100 py-2 px-4">
+            <li class="flex py-4">
+              <div class="mr-4 flex-1">
+                <h4 class="text-lg font-medium text-gray-900">The Bank of England Risks Hiking Too Far Ahead</h4>
+                <div class="mt-1 text-sm text-gray-400"><span>Business</span> • <time>18 Nov 2022</time></div>
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1631016800696-5ea8801b3c2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+                  class="h-20 w-20 rounded-lg object-cover"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="flex py-4">
+              <div class="mr-4 flex-1">
+                <h4 class="text-lg font-medium text-gray-900">The Bank of England Risks Hiking Too Far Ahead</h4>
+                <div class="mt-1 text-sm text-gray-400"><span>Business</span> • <time>18 Nov 2022</time></div>
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1550510537-89d5433de5cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+                  class="h-20 w-20 rounded-lg object-cover"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="flex py-4">
+              <div class="mr-4 flex-1">
+                <h4 class="text-lg font-medium text-gray-900">The Bank of England Risks Hiking Too Far Ahead</h4>
+                <div class="mt-1 text-sm text-gray-400"><span>Business</span> • <time>18 Nov 2022</time></div>
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1587614380862-0294308ae58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  class="h-20 w-20 rounded-lg object-cover"
+                  alt=""
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With form</h2>
+        <div class="max-w-md rounded-lg bg-white shadow">
+          <div class="p-4">
+            <h3 class="text-xl font-medium text-gray-900">Newsletter</h3>
+            <p class="mt-1 text-gray-500">The latest on what’s moving markets, in your inbox every morning</p>
+            <div class="mt-3">
+              <label for="example1" class="sr-only mb-1 block text-sm font-medium text-gray-700">Url</label>
+              <div class="relative z-0 flex">
+                <input
+                  type="email"
+                  id="example1"
+                  class="block w-full rounded-md rounded-r-none border-gray-200 shadow-sm focus:z-10 focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500"
+                  placeholder="Email"
+                />
+                <button
+                  for="example1"
+                  class="flex items-center space-x-1 rounded-md rounded-l-none border border-l-0 border-gray-200 px-2.5 text-gray-700 hover:bg-gray-100"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With header</h2>
+        <div class="max-w-md rounded-lg bg-white shadow">
+          <div class="flex items-center justify-between border-b border-gray-100 p-4">
+            <h3 class="text-lg font-medium text-gray-900">Today views</h3>
+            <div
+              x-data="{
+            open: false,
+            toggle() {
+                if (this.open) {
+                    return this.close()
+                }
+
+                this.$refs.button.focus()
+
+                this.open = true
+            },
+            close(focusAfter) {
+                if (! this.open) return
+
+                this.open = false
+
+                focusAfter && focusAfter.focus()
+            }
+        }"
+              x-on:keydown.escape.prevent.stop="close($refs.button)"
+              x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+              x-id="['dropdown-button']"
+              class="relative inline-block"
+            >
+              <!-- Button -->
+
+              <button
+                x-ref="button"
+                x-on:click="toggle()"
+                :aria-expanded="open"
+                :aria-controls="$id('dropdown-button')"
+                type="button"
+                class="text-gray-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-5 w-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
+
+              <!-- Panel -->
+              <div
+                x-ref="panel"
+                x-show="open"
+                x-transition.origin.top.right
+                x-on:click.outside="close($refs.button)"
+                :id="$id('dropdown-button')"
+                class="absolute right-0 z-10 mt-2 w-48 rounded-lg border border-gray-100 bg-white text-left text-sm shadow-lg"
+              >
+                <div class="p-1">
+                  <a href="#" class="flex w-full items-center rounded-md px-3 py-2 text-gray-700 hover:bg-gray-100">
+                    Dashboard
+                  </a>
+                  <a
+                    href="#"
+                    class="flex w-full items-center rounded-md px-3 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Settings
+                  </a>
+                  <a
+                    href="#"
+                    class="flex w-full items-center rounded-md px-3 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Help
+                  </a>
+                  <a href="#" class="flex w-full items-center rounded-md px-3 py-2 text-gray-700 hover:bg-gray-100">
+                    Log out
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 800 400"
+              aria-hidden="false"
+              aria-label="Interactive chart"
+              class="w-full"
+            >
+              <rect fill="#fff" width="800" height="400" rx="0" ry="0" aria-hidden="true" />
+              <path fill="none" aria-hidden="true" d="M69 10h721v375H69z" />
+              <path fill="none" data-z-index="1" aria-hidden="true" d="M69 10h721v375H69z" />
+              <g data-z-index="1" aria-hidden="true" fill="none">
+                <path
+                  data-z-index="1"
+                  d="M188.5 10v375M308.5 10v375M429.5 10v375M549.5 10v375M669.5 10v375M789.5 10v375M68.5 10v375"
+                />
+              </g>
+              <g data-z-index="1" aria-hidden="true" fill="none" stroke="#e6e6e6">
+                <path
+                  data-z-index="1"
+                  d="M69 385.5h721M69 171.5h721M69 331.5h721M69 278.5h721M69 224.5h721M69 117.5h721M69 64.5h721M69 9.5h721"
+                />
+              </g>
+              <g data-z-index="2" aria-hidden="true">
+                <path fill="none" stroke="#ccd6eb" data-z-index="7" d="M69 385.5h721" />
+              </g>
+              <g data-z-index="2" aria-hidden="true">
+                <text
+                  font-family="inter-Regular,inter"
+                  x="25.883"
+                  data-z-index="7"
+                  text-anchor="middle"
+                  transform="rotate(-90 25.883 197.5)"
+                  y="197.5"
+                  color="#666"
+                  fill="#666"
+                >
+                  views
+                </text>
+                <path fill="none" data-z-index="7" d="M69 10v375" />
+              </g>
+              <g data-z-index="3" aria-hidden="false">
+                <g
+                  data-z-index=".1"
+                  clip-path="url(#highcharts-qqb1wgn-319-)"
+                  aria-hidden="false"
+                  tabindex="-1"
+                  aria-label="Item 2, bar series 1 of 2 with 6 bars."
+                  style="outline: 0"
+                  fill="#93c5fd"
+                  stroke="#fff"
+                  transform="translate(69 10)"
+                >
+                  <path tabindex="-1" aria-label="x, 0, 62. Item 2." style="outline: 0" d="M30.5 64.5h58v133h-58z" />
+                  <path tabindex="-1" aria-label="x, 1, 14. Item 2." style="outline: 0" d="M150.5 206.5h58v30h-58z" />
+                  <path tabindex="-1" aria-label="x, 2, 64. Item 2." style="outline: 0" d="M271.5 214.5h58v137h-58z" />
+                  <path tabindex="-1" aria-label="x, 3, 61. Item 2." style="outline: 0" d="M391.5 41.5h58v130h-58z" />
+                  <path tabindex="-1" aria-label="x, 4, 93. Item 2." style="outline: 0" d="M511.5 86.5h58v199h-58z" />
+                  <path tabindex="-1" aria-label="x, 5, 24. Item 2." style="outline: 0" d="M631.5 234.5h58v51h-58z" />
+                </g>
+                <g
+                  data-z-index=".1"
+                  clip-path="url(#highcharts-qqb1wgn-319-)"
+                  aria-hidden="false"
+                  tabindex="-1"
+                  aria-label="Item 1, bar series 2 of 2 with 6 bars."
+                  style="outline: 0"
+                  fill="#2563eb"
+                  stroke="#fff"
+                  transform="translate(69 10)"
+                >
+                  <path tabindex="-1" aria-label="x, 0, 83. Item 1." style="outline: 0" d="M30.5 197.5h58v178h-58z" />
+                  <path tabindex="-1" aria-label="x, 1, 65. Item 1." style="outline: 0" d="M150.5 236.5h58v139h-58z" />
+                  <path tabindex="-1" aria-label="x, 2, 11. Item 1." style="outline: 0" d="M271.5 351.5h58v24h-58z" />
+                  <path tabindex="-1" aria-label="x, 3, 95. Item 1." style="outline: 0" d="M391.5 171.5h58v204h-58z" />
+                  <path tabindex="-1" aria-label="x, 4, 42. Item 1." style="outline: 0" d="M511.5 285.5h58v90h-58z" />
+                  <path tabindex="-1" aria-label="x, 5, 42. Item 1." style="outline: 0" d="M631.5 285.5h58v90h-58z" />
+                </g>
+              </g>
+              <g
+                data-z-index="7"
+                aria-hidden="true"
+                font-family="inter-Regular,inter"
+                text-anchor="end"
+                color="#666"
+                cursor="default"
+                font-size="11"
+                fill="#666"
+              >
+                <text x="54" y="389">0</text>
+                <text x="54" y="174">100</text>
+                <text x="54" y="335">25</text>
+                <text x="54" y="281">50</text>
+                <text x="54" y="228">75</text>
+                <text x="54" y="121">125</text>
+                <text x="54" y="67">150</text>
+                <text x="54" y="14">175</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">With fooer</h2>
+        <div class="max-w-md rounded-lg bg-white shadow">
+          <div class="flex items-center justify-between border-b border-gray-100 p-4">
+            <div>
+              <h3 class="text-lg font-medium text-gray-900">Today views</h3>
+              <p class="text-sm text-gray-500">Keep track of vendors and their security ratings.</p>
+            </div>
+            <div
+              x-data="{
+            open: false,
+            toggle() {
+                if (this.open) {
+                    return this.close()
+                }
+
+                this.$refs.button.focus()
+
+                this.open = true
+            },
+            close(focusAfter) {
+                if (! this.open) return
+
+                this.open = false
+
+                focusAfter && focusAfter.focus()
+            }
+        }"
+              x-on:keydown.escape.prevent.stop="close($refs.button)"
+              x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+              x-id="['dropdown-button']"
+              class="relative inline-block"
+            >
+              <!-- Button -->
+
+              <button
+                x-ref="button"
+                x-on:click="toggle()"
+                :aria-expanded="open"
+                :aria-controls="$id('dropdown-button')"
+                type="button"
+                class="text-gray-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-5 w-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
+
+              <!-- Panel -->
+              <div
+                x-ref="panel"
+                x-show="open"
+                x-transition.origin.top.right
+                x-on:click.outside="close($refs.button)"
+                :id="$id('dropdown-button')"
+                class="absolute right-0 z-10 mt-2 w-48 rounded-lg border border-gray-100 bg-white text-left text-sm shadow-lg"
+              >
+                <div class="p-1">
+                  <a href="#" class="flex w-full items-center rounded-md px-3 py-2 text-gray-700 hover:bg-gray-100">
+                    Dashboard
+                  </a>
+                  <a
+                    href="#"
+                    class="flex w-full items-center rounded-md px-3 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Settings
+                  </a>
+                  <a
+                    href="#"
+                    class="flex w-full items-center rounded-md px-3 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Help
+                  </a>
+                  <a href="#" class="flex w-full items-center rounded-md px-3 py-2 text-gray-700 hover:bg-gray-100">
+                    Log out
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 800 400"
+              aria-hidden="false"
+              aria-label="Interactive chart"
+              class="w-full"
+            >
+              <rect fill="#fff" width="800" height="400" rx="0" ry="0" aria-hidden="true" />
+              <path fill="none" aria-hidden="true" d="M69 10h721v375H69z" />
+              <path fill="none" data-z-index="1" aria-hidden="true" d="M69 10h721v375H69z" />
+              <g data-z-index="1" aria-hidden="true" fill="none">
+                <path
+                  data-z-index="1"
+                  d="M188.5 10v375M308.5 10v375M429.5 10v375M549.5 10v375M669.5 10v375M789.5 10v375M68.5 10v375"
+                />
+              </g>
+              <g data-z-index="1" aria-hidden="true" fill="none" stroke="#e6e6e6">
+                <path
+                  data-z-index="1"
+                  d="M69 385.5h721M69 171.5h721M69 331.5h721M69 278.5h721M69 224.5h721M69 117.5h721M69 64.5h721M69 9.5h721"
+                />
+              </g>
+              <g data-z-index="2" aria-hidden="true">
+                <path fill="none" stroke="#ccd6eb" data-z-index="7" d="M69 385.5h721" />
+              </g>
+              <g data-z-index="2" aria-hidden="true">
+                <text
+                  font-family="inter-Regular,inter"
+                  x="25.883"
+                  data-z-index="7"
+                  text-anchor="middle"
+                  transform="rotate(-90 25.883 197.5)"
+                  y="197.5"
+                  color="#666"
+                  fill="#666"
+                >
+                  views
+                </text>
+                <path fill="none" data-z-index="7" d="M69 10v375" />
+              </g>
+              <g data-z-index="3" aria-hidden="false">
+                <g
+                  data-z-index=".1"
+                  clip-path="url(#highcharts-qqb1wgn-319-)"
+                  aria-hidden="false"
+                  tabindex="-1"
+                  aria-label="Item 2, bar series 1 of 2 with 6 bars."
+                  style="outline: 0"
+                  fill="#93c5fd"
+                  stroke="#fff"
+                  transform="translate(69 10)"
+                >
+                  <path tabindex="-1" aria-label="x, 0, 62. Item 2." style="outline: 0" d="M30.5 64.5h58v133h-58z" />
+                  <path tabindex="-1" aria-label="x, 1, 14. Item 2." style="outline: 0" d="M150.5 206.5h58v30h-58z" />
+                  <path tabindex="-1" aria-label="x, 2, 64. Item 2." style="outline: 0" d="M271.5 214.5h58v137h-58z" />
+                  <path tabindex="-1" aria-label="x, 3, 61. Item 2." style="outline: 0" d="M391.5 41.5h58v130h-58z" />
+                  <path tabindex="-1" aria-label="x, 4, 93. Item 2." style="outline: 0" d="M511.5 86.5h58v199h-58z" />
+                  <path tabindex="-1" aria-label="x, 5, 24. Item 2." style="outline: 0" d="M631.5 234.5h58v51h-58z" />
+                </g>
+                <g
+                  data-z-index=".1"
+                  clip-path="url(#highcharts-qqb1wgn-319-)"
+                  aria-hidden="false"
+                  tabindex="-1"
+                  aria-label="Item 1, bar series 2 of 2 with 6 bars."
+                  style="outline: 0"
+                  fill="#2563eb"
+                  stroke="#fff"
+                  transform="translate(69 10)"
+                >
+                  <path tabindex="-1" aria-label="x, 0, 83. Item 1." style="outline: 0" d="M30.5 197.5h58v178h-58z" />
+                  <path tabindex="-1" aria-label="x, 1, 65. Item 1." style="outline: 0" d="M150.5 236.5h58v139h-58z" />
+                  <path tabindex="-1" aria-label="x, 2, 11. Item 1." style="outline: 0" d="M271.5 351.5h58v24h-58z" />
+                  <path tabindex="-1" aria-label="x, 3, 95. Item 1." style="outline: 0" d="M391.5 171.5h58v204h-58z" />
+                  <path tabindex="-1" aria-label="x, 4, 42. Item 1." style="outline: 0" d="M511.5 285.5h58v90h-58z" />
+                  <path tabindex="-1" aria-label="x, 5, 42. Item 1." style="outline: 0" d="M631.5 285.5h58v90h-58z" />
+                </g>
+              </g>
+              <g
+                data-z-index="7"
+                aria-hidden="true"
+                font-family="inter-Regular,inter"
+                text-anchor="end"
+                color="#666"
+                cursor="default"
+                font-size="11"
+                fill="#666"
+              >
+                <text x="54" y="389">0</text>
+                <text x="54" y="174">100</text>
+                <text x="54" y="335">25</text>
+                <text x="54" y="281">50</text>
+                <text x="54" y="228">75</text>
+                <text x="54" y="121">125</text>
+                <text x="54" y="67">150</text>
+                <text x="54" y="14">175</text>
+              </g>
+            </svg>
+          </div>
+          <div class="flex justify-end border-t border-gray-100 p-4">
+            <button
+              type="button"
+              class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
+            >
+              View report
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
