@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout - SailboatUI</title>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/dist/tippy.css" />
+    <link rel="stylesheet" href="../assets/css/tailwind.css" />
+    <script src="https://unpkg.com/@ryangjchandler/alpine-tooltip@1.2.0/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+  </head>
+  <body class="">
+    <div class="container mx-auto py-20">
+      <h1 class="text-xl font-bold">Layout</h1>
+      <hr class="my-5" />
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Center</h2>
+        <div class="flex h-40 max-w-md items-center justify-center bg-blue-50">
+          <div class="h-20 w-20 rounded bg-blue-500"></div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Center</h2>
+        <div class="flex h-40 max-w-md items-center justify-between bg-blue-50">
+          <div class="h-20 w-20 rounded bg-blue-500"></div>
+          <div class="h-20 w-20 rounded bg-blue-500"></div>
+          <div class="h-20 w-20 rounded bg-blue-500"></div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Fixed in element</h2>
+        <h3 class="my-2">Fixed in top left</h3>
+        <div class="relative h-40 max-w-md bg-blue-50">
+          <div class="absolute left-0 top-0 h-20 w-20 rounded bg-blue-500"></div>
+        </div>
+        <h3 class="my-2">Fixed in top right</h3>
+        <div class="relative h-40 max-w-md bg-blue-50">
+          <div class="absolute right-0 top-0 h-20 w-20 rounded bg-blue-500"></div>
+        </div>
+        <h3 class="my-2">Fixed in bottom left</h3>
+        <div class="relative h-40 max-w-md bg-blue-50">
+          <div class="absolute left-0 bottom-0 h-20 w-20 rounded bg-blue-500"></div>
+        </div>
+        <h3 class="my-2">Fixed in bottom right</h3>
+        <div class="relative h-40 max-w-md bg-blue-50">
+          <div class="absolute right-0 bottom-0 h-20 w-20 rounded bg-blue-500"></div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Holy grail layout</h2>
+        <div class="max-w-md">
+          <div class="flex h-80 flex-col">
+            <header class="bg-blue-200 p-4">Header</header>
+            <div class="flex flex-1 flex-row">
+              <main class="flex-1 bg-blue-50 p-4">Content</main>
+              <nav class="order-first w-32 bg-blue-100 p-4">Navigation</nav>
+              <aside class="w-32 bg-blue-100 p-4">Side</aside>
+            </div>
+            <footer class="bg-blue-200 p-4">Footer</footer>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Sticky header</h2>
+        <div class="max-w-md">
+          <div class="h-60 overflow-y-auto">
+            <header class="sticky top-0 bg-blue-200 p-4">Header</header>
+            <main class="h-96 flex-1 bg-blue-50 p-4">Content</main>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Sticky footer</h2>
+        <div class="max-w-md">
+          <div class="flex h-60 flex-col">
+            <!-- <div class="flex h-60 min-h-screen flex-col"> -->
+            <header class="bg-blue-200 p-4">Header</header>
+            <main class="h-96 flex-1 bg-blue-50 p-4">Content</main>
+            <footer class="bg-blue-200 p-4">Footer</footer>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-2 text-lg font-medium">Sidebar</h2>
+        <div class="max-w-md">
+          <div class="flex h-60">
+            <aside class="w-32 flex-none bg-blue-200 p-4">Side</aside>
+            <main class="min-w-0 flex-1 overflow-auto bg-blue-50 p-4">Content</main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
