@@ -28,6 +28,7 @@
 - [File input](https://sailboatui.com/examples/file-input)
 - [Layout](https://sailboatui.com/examples/layout)
 - [List](https://sailboatui.com/examples/list)
+- [Media object](https://sailboatui.com/examples/media-object)
 - [Modal](https://sailboatui.com/examples/modal)
 - [Notification](https://sailboatui.com/examples/notification)
 - [Pagination](https://sailboatui.com/examples/pagination)
