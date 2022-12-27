@@ -112,5 +112,13 @@
 <link rel="manifest" href="/site.webmanifest" />
 
 <!-- Google Analytics   -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V4T6LW86FG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-{{ template "_internal/google_analytics_async.html" . }}
+  gtag("config", "G-V4T6LW86FG");
+</script>
