@@ -40,15 +40,14 @@
 
 {{ $isDev := eq hugo.Environment "development" }}
 {{ $stylesheet := resources.Get "css/sailboat.css" }}
-{{ if not $isDev }}
-  {{ $stylesheet = $stylesheet | minify | fingerprint }}
-{{ end }}
+{{ if not $isDev }}{{ $stylesheet = $stylesheet | minify | fingerprint }}{{ end }}
 {{ with $stylesheet }}
   {{ if $isDev }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" />
   {{ else }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" />
   {{ end }}
+
   {{ $.Scratch.Set "stylesheet" . }}
 {{ end }}
 
@@ -90,8 +89,9 @@
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
 
 <!-- Sitemap & RSS Feed Links -->
-<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}" />
-{{ with .OutputFormats.Get "RSS" }}
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}" /> {{ with
+  .OutputFormats.Get "RSS"
+}}
   <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
   <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end }}

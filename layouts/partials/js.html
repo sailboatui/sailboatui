@@ -16,7 +16,10 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 ></script>
-{{ $isDev := eq hugo.Environment "development" }} {{ $script := resources.Get "js/app.js" }} {{ if not $isDev }} {{
-$script = $script | minify | fingerprint }} {{ end }} {{ with $script }}
-<script src="{{ .RelPermalink }}" crossorigin="anonymous" data-cfasync="false"></script>
-{{ $.Scratch.Set "script" . }} {{ end }}
+{{ $isDev := eq hugo.Environment "development" }}
+{{ $script := resources.Get "js/app.js" }}
+{{ if not $isDev }}{{ $script = $script | minify | fingerprint }}{{ end }}
+{{ with $script }}
+  <script src="{{ .RelPermalink }}" crossorigin="anonymous" data-cfasync="false"></script>
+  {{ $.Scratch.Set "script" . }}
+{{ end }}
