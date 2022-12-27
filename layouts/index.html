@@ -44,7 +44,13 @@
             href="{{ .RelPermalink }}"
           >
             {{- $image := resources.Get .Params.featured_image -}}
-            <div class="bg-secondary-100/50"><img src="{{ $image.RelPermalink }}" class="w-full object-cover" /></div>
+            <div class="bg-secondary-100/50">
+              <img
+                src="{{ $image.RelPermalink }}"
+                class="w-full object-cover"
+                alt="Tailwind CSS {{ .Title }} component"
+              />
+            </div>
             <div class="p-4">
               <h4 class="font-medium text-slate-900">{{ .Title }}</h4>
               <p class="text-sm">{{ .Params.components }} components</p>

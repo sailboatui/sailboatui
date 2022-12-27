@@ -2,7 +2,8 @@ baseURL = 'https://sailboatui.com'
 languageCode = 'en-us'
 title = 'Sailboat UI'
 
-googleAnalytics = 'G-MEASUREMENT_ID'
+[params]
+  description = 'SailboatUI is a modern UI framework for Tailwind CSS. We can save you a lot of time and provide many components.'
 
 [menu]
 
