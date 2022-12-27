@@ -13,8 +13,6 @@
 
 ## 150+ Components
 
-We will provide everything you can think of.
-
 <table>
   <tr>
     <td >Avatar</td>
@@ -82,7 +80,7 @@ We will provide everything you can think of.
   </tr>
   <tr>
     <td colspan="2" align="center">
-        <a href="https://sailboatui.com/docs/components/button/">
+        <a href="https://sailboatui.com/docs/components/accordion/">
             View All
         </a>
     </td>
