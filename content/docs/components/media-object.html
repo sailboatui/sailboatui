@@ -1,0 +1,137 @@
+---
+title: "Media object"
+components: 4
+menu:
+  docs:
+    parent: "components"
+---
+
+{{< code ctitle="Default" >}}
+<div class="mx-auto max-w-xl">
+  <div class="flex gap-4">
+    <img
+      class="h-12 w-12 rounded object-cover object-center"
+      src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+    />
+    <div class="flex-1">
+      <h4 class="text-lg font-medium">Media title</h4>
+      <p class="mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl quis massa vulputate adipiscing.
+      </p>
+    </div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Order" >}}
+<div class="mx-auto max-w-xl">
+  <div class="flex gap-4">
+    <img
+      class="order-1 h-12 w-12 rounded object-cover object-center"
+      src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+    />
+    <div class="flex-1">
+      <h4 class="text-lg font-medium">Media title</h4>
+      <p class="mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl quis massa vulputate adipiscing.
+      </p>
+    </div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Alignment" >}}
+<div class="mx-auto max-w-xl space-y-4">
+  <div class="flex gap-4">
+    <img
+      class="h-12 w-12 rounded object-cover object-center"
+      src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+    />
+    <div class="flex-1">
+      <h4 class="text-lg font-medium">Top aligned media</h4>
+      <p class="mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl quis massa vulputate adipiscing.Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+  </div>
+  <div class="flex items-center gap-4">
+    <img
+      class="h-12 w-12 rounded object-cover object-center"
+      src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+    />
+    <div class="flex-1">
+      <h4 class="text-lg font-medium">Center aligned media</h4>
+      <p class="mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl quis massa vulputate adipiscing.Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+  </div>
+  <div class="flex items-end gap-4">
+    <img
+      class="h-12 w-12 rounded object-cover object-center"
+      src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+    />
+    <div class="flex-1">
+      <h4 class="text-lg font-medium">Bottom aligned media</h4>
+      <p class="mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl quis massa vulputate adipiscing.Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Nested" >}}
+<div class="mx-auto max-w-xl">
+  <div class="flex gap-4">
+    <img
+      class="h-12 w-12 rounded object-cover object-center"
+      src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+    />
+    <div class="flex-1">
+      <h4 class="text-lg font-medium">Media title</h4>
+      <p class="mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl quis massa vulputate adipiscing.Lorem
+        ipsum dolor sit amet.
+      </p>
+      <div class="mt-4 flex gap-4">
+        <img
+          class="h-12 w-12 rounded object-cover object-center"
+          src="https://images.unsplash.com/photo-1645378999013-95abebf5f3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+          alt=""
+        />
+        <div class="flex-1">
+          <h4 class="text-lg font-medium">Media title</h4>
+          <p class="mt-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl quis massa vulputate
+            adipiscing.Lorem ipsum dolor sit amet.
+          </p>
+          <div class="mt-4 flex gap-4">
+            <img
+              class="h-12 w-12 rounded object-cover object-center"
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="flex-1">
+              <h4 class="text-lg font-medium">Media title</h4>
+              <p class="mt-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl quis massa vulputate
+                adipiscing.Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{< /code >}}

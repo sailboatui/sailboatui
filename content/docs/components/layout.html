@@ -1,0 +1,80 @@
+---
+title: "Layout"
+components: 7
+menu:
+  docs:
+    parent: "components"
+---
+
+{{< code ctitle="Center" >}}
+<div class="mx-auto max-w-md">
+  <div class="flex h-40 max-w-md items-center justify-center bg-blue-50">
+    <div class="h-20 w-20 rounded bg-blue-500"></div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Between" >}}
+<div class="mx-auto max-w-md">
+  <div class="flex h-40 max-w-md items-center justify-between bg-blue-50">
+    <div class="h-20 w-20 rounded bg-blue-500"></div>
+    <div class="h-20 w-20 rounded bg-blue-500"></div>
+    <div class="h-20 w-20 rounded bg-blue-500"></div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Fixed in element" >}}
+<div class="mx-auto max-w-md">
+  <h3 class="my-2">Fixed in top left</h3>
+  <div class="relative h-40 max-w-md bg-blue-50">
+    <div class="absolute left-0 top-0 h-20 w-20 rounded bg-blue-500"></div>
+  </div>
+  <h3 class="my-2">Fixed in top right</h3>
+  <div class="relative h-40 max-w-md bg-blue-50">
+    <div class="absolute right-0 top-0 h-20 w-20 rounded bg-blue-500"></div>
+  </div>
+  <h3 class="my-2">Fixed in bottom left</h3>
+  <div class="relative h-40 max-w-md bg-blue-50">
+    <div class="absolute left-0 bottom-0 h-20 w-20 rounded bg-blue-500"></div>
+  </div>
+  <h3 class="my-2">Fixed in bottom right</h3>
+  <div class="relative h-40 max-w-md bg-blue-50">
+    <div class="absolute right-0 bottom-0 h-20 w-20 rounded bg-blue-500"></div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Holy grail layout" >}}
+<div class="flex min-h-screen flex-col">
+  <header class="bg-blue-200 p-4">Header</header>
+  <div class="flex flex-1 flex-row">
+    <main class="flex-1 bg-blue-50 p-4">Content</main>
+    <nav class="order-first w-32 bg-blue-100 p-4">Navigation</nav>
+    <aside class="w-32 bg-blue-100 p-4">Side</aside>
+  </div>
+  <footer class="bg-blue-200 p-4">Footer</footer>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Sticky header" >}}
+<div class="h-60 overflow-y-auto">
+  <header class="sticky top-0 bg-blue-200 p-4">Header</header>
+  <main class="h-96 flex-1 bg-blue-50 p-4">Content</main>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Sticky footer" >}}
+<div class="flex h-60 min-h-screen flex-col">
+  <header class="bg-blue-200 p-4">Header</header>
+  <main class="h-96 flex-1 bg-blue-50 p-4">Content</main>
+  <footer class="bg-blue-200 p-4">Footer</footer>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Sidebar" >}}
+<div class="flex h-60">
+  <aside class="w-32 flex-none bg-blue-200 p-4">Side</aside>
+  <main class="min-w-0 flex-1 overflow-auto bg-blue-50 p-4">Content</main>
+</div>
+{{< /code >}}

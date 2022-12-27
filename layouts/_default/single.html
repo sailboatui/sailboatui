@@ -1,0 +1,61 @@
+{{ define "main" }}
+  <section class="pt-24">
+    <div class="container mx-auto px-6 2xl:px-40">
+      <div class="relative flex w-full">
+        {{ partial "sidebar" . }}
+        <div class="w-full min-w-0 max-w-full lg:pl-72">
+          <p class="text-sm font-medium capitalize text-primary-500">{{ .Params.menu.docs.parent }}</p>
+          <h1 class="text-3xl font-bold capitalize text-secondary-900">{{ .Title }}</h1>
+          <div class="mt-10 space-y-8">
+            {{ .Content }}
+          </div>
+          <div class="my-10 flex justify-between">
+            <div>
+              {{ if .NextPage }}
+                <a
+                  class="flex items-center gap-1 font-medium capitalize hover:text-secondary-900"
+                  href="{{ .NextPage.RelPermalink }}"
+                  ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  {{ .NextPage.Title | truncate 50 "..." }}</a
+                >
+              {{ end }}
+            </div>
+
+            <div>
+              {{ if .PrevPage }}
+                <a
+                  class="flex items-center gap-1 font-medium capitalize hover:text-secondary-900"
+                  href="{{ .PrevPage.RelPermalink }}"
+                  >{{ .PrevPage.Title | truncate 50 "..." }}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+          <footer class="mt-10">
+            <div class="container mx-auto">
+              <div class="border-t py-10 text-center">Copyright © 2022 Sailboat UI</div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    #global-footer {
+      display: none;
+    }
+  </style>
+{{ end }}

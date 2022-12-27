@@ -1,0 +1,68 @@
+<aside
+  id="aside"
+  class="fixed inset-0 top-24 right-auto z-20 hidden h-[calc(100vh-100px)] w-64 shrink-0 overflow-y-auto lg:left-[max(0px,calc(50%-30.5rem))] lg:block xl:left-[max(0px,calc(50%-38rem))]"
+>
+  <div class="pr-4 pb-10">
+    <div class="sticky top-0">
+      <div class="group relative">
+        <input
+          type="text"
+          id="example9"
+          class="focus:ring-none block w-full rounded-md border-gray-200 px-10 shadow-sm hover:bg-gray-50 focus:border-gray-200 focus:ring-0  "
+          placeholder="Quick search..."
+        />
+        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-2.5 text-gray-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+            <path
+              fill-rule="evenodd"
+              d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5">
+          <span
+            class="rounded border px-1.5 text-sm text-gray-400 shadow-sm  group-hover:border-primary-500 group-hover:text-primary-500"
+            ><kbd>⌘</kbd> <kbd>K</kbd></span
+          >
+        </div>
+      </div>
+    </div>
+    <nav class="mt-8 text-sm capitalize">
+      <ul class="space-y-4">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.docs }}
+          {{ if .HasChildren }}
+            <li>
+              <h5 class="p-2 font-medium text-secondary-900">{{ .Name }}</h5>
+              <ul class="mt-1 space-y-1">
+                {{ range .Children }}
+                  <li>
+                    {{ if $currentPage.IsMenuCurrent "docs" . }}
+
+                      <a
+                        class="
+                        block rounded-lg bg-primary-50 p-2
+                       font-bold  text-primary-500 "
+                        href="{{ .URL }}"
+                        >{{ .Name }}</a
+                      >
+                    {{ else }}
+                      <a class="block rounded-lg  p-2 hover:bg-secondary-50 hover:text-secondary-900" href="{{ .URL }}"
+                        >{{ .Name }}</a
+                      >
+                    {{ end }}
+                  </li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ else }}
+            <li>
+              <h5 class="p-2 font-medium text-secondary-700">{{ .Name }}</h5>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</aside>

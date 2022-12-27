@@ -1,0 +1,161 @@
+---
+title: "Progress"
+components: 5
+menu:
+  docs:
+    parent: "components"
+---
+
+{{< code ctitle="Default" >}}
+<div class="relative flex h-2 w-full overflow-hidden rounded-full bg-secondary-200">
+  <div
+    role="progressbar"
+    aria-valuenow="15"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    style="width: 15%"
+    class="flex h-full bg-primary-500"
+  ></div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Color" >}}
+<div class="space-y-5">
+  <div class="relative flex h-2 w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="25"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 25%"
+      class="flex h-full bg-primary-500"
+    ></div>
+  </div>
+  <div class="relative flex h-2 w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="35"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 35%"
+      class="flex h-full bg-green-500"
+    ></div>
+  </div>
+  <div class="relative flex h-2 w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="45"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 45%"
+      class="flex h-full bg-yellow-500"
+    ></div>
+  </div>
+  <div class="relative flex h-2 w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="55"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 55%"
+      class="flex h-full bg-red-500"
+    ></div>
+  </div>
+  <div class="relative flex h-2 w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="65"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 65%"
+      class="flex h-full bg-gray-500"
+    ></div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Size" >}}
+<div class="space-y-5">
+  <div class="relative flex h-px w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="25"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 25%"
+      class="flex h-full bg-primary-500"
+    ></div>
+  </div>
+  <div class="relative flex h-1 w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="35"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 35%"
+      class="flex h-full bg-primary-500"
+    ></div>
+  </div>
+  <div class="relative flex h-2 w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="45"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 45%"
+      class="flex h-full bg-primary-500"
+    ></div>
+  </div>
+  <div class="relative flex h-4 w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="55"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 55%"
+      class="flex h-full bg-primary-500"
+    ></div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="With outside label" >}}
+<div class="space-y-1">
+  <dl class="flex items-center justify-between">
+    <dt class="font-medium text-secondary-700">Progress</dt>
+    <dd class="text-sm text-secondary-500">35%</dd>
+  </dl>
+  <div class="relative flex h-2 w-full overflow-hidden rounded-full bg-secondary-200">
+    <div
+      role="progressbar"
+      aria-valuenow="35"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 35%"
+      class="flex h-full items-center justify-center bg-primary-500 text-xs text-white"
+    ></div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="With float label" >}}
+<div class="mt-5">
+  <div class="relative">
+    <span
+      class="text-secondary-6 00 absolute bottom-full mb-2 -translate-x-1/2 rounded-md border border-secondary-50 bg-white py-1 px-2 text-sm text-secondary-500 shadow"
+      style="left: 45%"
+      >45%</span
+    >
+    <div class="relative flex h-2 w-full overflow-hidden rounded-full bg-secondary-200">
+      <div
+        role="progressbar"
+        aria-valuenow="45"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 45%"
+        class="flex h-full items-center justify-center bg-primary-500 text-xs text-white"
+      ></div>
+    </div>
+  </div>
+</div>
+{{< /code >}}

@@ -1,0 +1,116 @@
+---
+title: "Card"
+components: 4
+tag: "hot"
+featured_image: "/images/thumb-card.png"
+menu:
+  docs:
+    parent: "components"
+---
+
+{{< code  ctitle="Simple" >}}
+<div class="mx-auto max-w-md rounded-lg bg-white shadow">
+  <div class="p-4">
+    <h3 class="text-xl font-medium text-gray-900">Migrating to Linear 101</h3>
+    <p class="mt-1 text-gray-500">Linear helps streamline software projects, sprints, tasks, and bug tracking.</p>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code  ctitle="With photo" >}}
+<div class="mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow">
+  <img
+    src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+    class="aspect-video w-full object-cover"
+    alt=""
+  />
+  <div class="p-4">
+    <p class="mb-1 text-sm text-primary-500">Andrea Felsted • <time>18 Nov 2022</time></p>
+    <h3 class="text-xl font-medium text-gray-900">Migrating to Linear 101</h3>
+    <p class="mt-1 text-gray-500">Linear helps streamline software projects, sprints, tasks, and bug tracking.</p>
+    <div class="mt-4 flex gap-2">
+      <span
+        class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600"
+      >
+        Design
+      </span>
+      <span
+        class="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-2 py-1 text-xs font-semibold text-indigo-600"
+      >
+        Product
+      </span>
+      <span
+        class="inline-flex items-center gap-1 rounded-full bg-orange-50 px-2 py-1 text-xs font-semibold text-orange-600"
+      >
+        Develop
+      </span>
+    </div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code  ctitle="Background" >}}
+<div class="relative mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow">
+  <div>
+    <img
+      src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+      class="w-full object-cover"
+      alt=""
+    />
+  </div>
+  <div class="absolute inset-0 z-10 bg-gradient-to-t from-black"></div>
+  <div class="absolute inset-x-0 bottom-0 z-20 p-4">
+    <p class="mb-1 text-sm text-white text-opacity-80">Andrea Felsted • <time>18 Nov 2022</time></p>
+    <h3 class="text-xl font-medium text-white">Migrating to Linear 101</h3>
+    <p class="mt-1 text-white text-opacity-80">
+      Linear helps streamline software projects, sprints, tasks, and bug tracking.
+    </p>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code  ctitle="With List" >}}
+<div class="mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow">
+  <ul class="divide-y divide-gray-100 py-2 px-4">
+    <li class="flex py-4">
+      <div class="mr-4 flex-1">
+        <h4 class="text-lg font-medium text-gray-900">The Bank of England Risks Hiking Too Far Ahead</h4>
+        <div class="mt-1 text-sm text-gray-400"><span>Business</span> • <time>18 Nov 2022</time></div>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1631016800696-5ea8801b3c2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+          class="h-20 w-20 rounded-lg object-cover"
+          alt=""
+        />
+      </div>
+    </li>
+    <li class="flex py-4">
+      <div class="mr-4 flex-1">
+        <h4 class="text-lg font-medium text-gray-900">The Bank of England Risks Hiking Too Far Ahead</h4>
+        <div class="mt-1 text-sm text-gray-400"><span>Business</span> • <time>18 Nov 2022</time></div>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1550510537-89d5433de5cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+          class="h-20 w-20 rounded-lg object-cover"
+          alt=""
+        />
+      </div>
+    </li>
+    <li class="flex py-4">
+      <div class="mr-4 flex-1">
+        <h4 class="text-lg font-medium text-gray-900">The Bank of England Risks Hiking Too Far Ahead</h4>
+        <div class="mt-1 text-sm text-gray-400"><span>Business</span> • <time>18 Nov 2022</time></div>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1587614380862-0294308ae58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+          class="h-20 w-20 rounded-lg object-cover"
+          alt=""
+        />
+      </div>
+    </li>
+  </ul>
+</div>
+{{< /code >}}

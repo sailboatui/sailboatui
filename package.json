@@ -4,7 +4,13 @@
   "description": "A modern UI framework for Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css --watch --minify --postcss postcss.config.js"
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:css": "NODE_ENV=development npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/sailboat.css --watch",
+    "dev:hugo": "hugo server",
+    "dev:open": "open http://127.0.0.1:1313/",
+    "build": "npm-run-all build:*",
+    "build:css": "NODE_ENV=production npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/sailboat.css --minify",
+    "build:hugo": "hugo --minify"
   },
   "repository": {
     "type": "git",
@@ -29,13 +35,15 @@
     "url": "https://github.com/sailboatui/sailboatui/issues"
   },
   "homepage": "https://github.com/sailboatui/sailboatui#readme",
-  "devDependencies": {
+  "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
-    "autoprefixer": "^10.4.12",
-    "cssnano": "^5.1.13",
-    "postcss": "^8.4.16",
-    "prettier": "^2.7.1",
+    "npm-run-all": "^4.1.5",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.8",
+    "prettier": "^2.8.0",
+    "prettier-plugin-go-template": "^0.0.13"
   }
 }

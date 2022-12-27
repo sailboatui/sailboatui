@@ -1,3 +1,18 @@
-node_modules
-.DS_Store
+public/
+resources/
+node_modules/
+/assets/jsconfig.json
+hugo_stats.json
+
 .vscode
+.DS_Store
+assets/css/sailboat.css
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
+

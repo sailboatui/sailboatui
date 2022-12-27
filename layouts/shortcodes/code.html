@@ -1,0 +1,96 @@
+<section x-data="{ activeTab:  0 }">
+  <div class="flex items-center justify-between">
+    <h2 class="text-lg font-medium text-secondary-900" id="{{ .Get "ctitle" }}">
+      <a href="#{{ .Get "ctitle" }}">{{ .Get "ctitle" }}</a>
+    </h2>
+    <div class="flex items-center gap-4">
+      <div class="overflow-hidden rounded-xl border border-gray-100 bg-gray-50 p-0.5">
+        <ul class="flex items-center gap-2 text-sm font-medium text-gray-500">
+          <li>
+            <button
+              @click="activeTab = 0"
+              :class="{ 'bg-white shadow text-secondary-700': activeTab === 0 }"
+              class="text-gra relative inline-flex items-center gap-2 rounded-lg px-3 py-1.5 "
+            >
+              Preview
+            </button>
+          </li>
+          <li>
+            <button
+              @click="activeTab = 1"
+              :class="{ 'bg-white shadow text-secondary-700': activeTab === 1 }"
+              class="inline-flex items-center gap-2 rounded-lg px-3 py-1.5"
+            >
+              Code
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="flex" x-data="{ tooltip: 'Copied!' }">
+        <button
+          x-tooltip.on.click="tooltip"
+          onclick="navigator.clipboard.writeText({{ .Inner | safeHTMLAttr }});"
+          class="rounded-xl border border-gray-100  bg-gray-50 p-0.5"
+        >
+          <div class="overflow-hidden rounded-lg p-1.5 transition-all hover:bg-white hover:shadow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mt-4">
+    <div
+      :class="{ '!block': activeTab === 0 }"
+      x-show.transition.in.opacity.duration.600="activeTab === 0"
+      class="hidden"
+    >
+      {{ $Inner := .Inner | safeHTMLAttr }}
+      {{ $isDev := eq hugo.Environment "development" }}
+      {{ $stylesheet := resources.Get "css/sailboat.css" }}
+      {{ if not $isDev }}
+        {{ $stylesheet = $stylesheet | minify | fingerprint }}
+      {{ end }}
+      {{ with $stylesheet }}
+        <iframe
+          class="h-80 w-full overflow-hidden rounded-lg ring-1 ring-secondary-200"
+          srcdoc="<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel='stylesheet' type='text/css' href='{{ .RelPermalink }}' crossorigin='anonymous' /><script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js' defer integrity='sha512-y22y4rJ9d7NGoRLII5LVwUv0BfQKf6MpATy5ebVu/fbHdtJCxBpZRHZMHJv8VYl8scWjuwZcMPzwYk4sEoyL4A==' crossorigin='anonymous' referrerpolicy='no-referrer'></script></head>
+                    <body class='bg-primary-50/20 text-secondary-500 antialiased'>
+                      <div class='flex min-h-screen items-center justify-center'>
+                        <div class='min-w-full p-6 mx-auto'>
+                       {{ $Inner }}
+                        </div>
+                      </div>
+                    </body>
+                  </html>"
+        ></iframe>
+        {{ $.Scratch.Set "stylesheet" . }}
+      {{ end }}
+    </div>
+    <div
+      :class="{ '!block': activeTab === 1 }"
+      x-show.transition.in.opacity.duration.600="activeTab === 1"
+      class="hidden"
+    >
+      <div class="prose relative max-w-none prose-pre:my-0" id="code">
+        {{ .Scratch.Set "finalCode" (replace .Inner "\n<" "<" 1) }}
+        {{ highlight (.Scratch.Get "finalCode") "html"
+          "style=dracula"
+        }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,323 @@
+---
+title: "Modal"
+components: 3
+menu:
+  docs:
+    parent: "components"
+---
+
+{{< code ctitle="Default" >}}
+<div x-data="{ showModal: false }" x-on:keydown.window.escape="showModal = false">
+  <div class="flex justify-center">
+    <button
+      x-on:click="showModal = !showModal"
+      class="rounded-lg border border-primary-500 bg-primary-500 px-5 py-2.5 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
+    >
+      Toggle Modal
+    </button>
+  </div>
+  <div x-cloak x-show="showModal" x-transition.opacity class="fixed inset-0 z-10 bg-secondary-700/50"></div>
+  <div x-cloak x-show="showModal" x-transition class="fixed inset-0 z-50 flex items-center justify-center">
+    <div class="mx-auto max-w-xl overflow-hidden rounded-lg bg-white shadow-xl">
+      <div class="relative p-6">
+        <button
+          type="button"
+          x-on:click="showModal = false"
+          class="absolute top-4 right-4 rounded-lg p-1 text-center font-medium text-secondary-500 transition-all hover:bg-secondary-100"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-6 w-6">
+            <path
+              d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
+            />
+          </svg>
+        </button>
+        <h3 class="text-lg font-medium text-secondary-900">Modal title</h3>
+        <div class="mt-2 text-sm text-secondary-500">
+          This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text the
+          modal, we use an inline style set a minimum height.
+        </div>
+      </div>
+      <div class="flex justify-end gap-3 bg-secondary-50 px-6 py-3">
+        <button
+          type="button"
+          class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
+        >
+          Cancle
+        </button>
+        <button
+          type="button"
+          class="rounded-lg border border-primary-500 bg-primary-500 px-4 py-2 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
+        >
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Information modal" >}}
+<div class="">
+  <div class="bg-secondary-500 py-12">
+    <div class="mx-auto max-w-xl overflow-hidden rounded-lg bg-white shadow-xl">
+      <div class="relative p-6">
+        <div class="flex gap-4">
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-green-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg font-medium text-secondary-900">Blog post published</h3>
+            <div class="mt-2 text-sm text-secondary-500">
+              This blog post has been published. Team members will be able to edit this post and republish changes.
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-end gap-3">
+          <button
+            type="button"
+            class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
+          >
+            Cancle
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-primary-500 bg-primary-500 px-4 py-2 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
+          >
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-secondary-500 py-12">
+    <div class="mx-auto max-w-xl overflow-hidden rounded-lg bg-white shadow-xl">
+      <div class="relative p-6">
+        <div class="flex gap-4">
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-100 text-yellow-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg font-medium text-secondary-900">Unsaved changes</h3>
+            <div class="mt-2 text-sm text-secondary-500">Do you want to save or discard changes?</div>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-end gap-3">
+          <button
+            type="button"
+            class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
+          >
+            Cancle
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-primary-500 bg-primary-500 px-4 py-2 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
+          >
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-secondary-500 py-12">
+    <div class="mx-auto max-w-xl overflow-hidden rounded-lg bg-white shadow-xl">
+      <div class="relative p-6">
+        <div class="flex gap-4">
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-red-100 text-red-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg font-medium text-secondary-900">Delete blog post</h3>
+            <div class="mt-2 text-sm text-secondary-500">
+              Are you sure you want to delete this post? This action cannot be undone.
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-end gap-3">
+          <button
+            type="button"
+            class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
+          >
+            Cancle
+          </button>
+          <button
+            type="button"
+            class="rounded-lg border border-red-500 bg-red-500 px-4 py-2 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-red-700 hover:bg-red-700 focus:ring focus:ring-red-200 disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{< /code >}}
+
+{{< code ctitle="Small center modal" >}}
+<div class="">
+  <div class="bg-secondary-500 py-12">
+    <div class="mx-auto max-w-sm overflow-hidden rounded-lg bg-white shadow-xl">
+      <div class="relative p-5">
+        <div class="text-center">
+          <div class="mx-auto mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-green-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-secondary-900">Blog post published</h3>
+            <div class="mt-2 text-sm text-secondary-500">
+              This blog post has been published. Team members will be able to edit this post and republish changes.
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 flex justify-end gap-3">
+          <button
+            type="button"
+            class="flex-1 rounded-lg border border-primary-500 bg-primary-500 px-4 py-2 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
+          >
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-secondary-500 py-12">
+    <div class="mx-auto max-w-sm overflow-hidden rounded-lg bg-white shadow-xl">
+      <div class="relative p-5">
+        <div class="text-center">
+          <div
+            class="mx-auto mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-yellow-100 text-yellow-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-secondary-900">Unsaved changes</h3>
+            <div class="mt-2 text-sm text-secondary-500">Do you want to save or discard changes?</div>
+          </div>
+        </div>
+        <div class="mt-5 flex justify-end gap-3">
+          <button
+            type="button"
+            class="flex-1 rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
+          >
+            Cancle
+          </button>
+          <button
+            type="button"
+            class="flex-1 rounded-lg border border-primary-500 bg-primary-500 px-4 py-2 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
+          >
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-secondary-500 py-12">
+    <div class="mx-auto max-w-sm overflow-hidden rounded-lg bg-white shadow-xl">
+      <div class="relative p-5">
+        <div class="text-center">
+          <div class="mx-auto mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 text-red-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-secondary-900">Delete blog post</h3>
+            <div class="mt-2 text-sm text-secondary-500">
+              Are you sure you want to delete this post? This action cannot be undone.
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 flex justify-end gap-3">
+          <button
+            type="button"
+            class="flex-1 rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
+          >
+            Cancle
+          </button>
+          <button
+            type="button"
+            class="flex-1 rounded-lg border border-red-500 bg-red-500 px-4 py-2 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-red-700 hover:bg-red-700 focus:ring focus:ring-red-200 disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{< /code >}}

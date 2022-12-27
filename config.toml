@@ -1,0 +1,26 @@
+baseURL = 'https://sailboatui.com'
+languageCode = 'en-us'
+title = 'Sailboat UI'
+
+googleAnalytics = 'G-MEASUREMENT_ID'
+
+[menu]
+
+[[menu.docs]]
+name = "Getting Started"
+identifier = "getting-started"
+url = "docs/getting-started/"
+weight = 10
+
+[[menu.docs]]
+name = "Components"
+identifier = "components"
+url = "docs/components/"
+weight = 20
+
+[[menu.docs]]
+name = "Forms"
+identifier = "forms"
+url = "docs/forms/"
+weight = 30
+

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head itemscope itemtype="{{ .Site.BaseURL }}">
+    {{ partial "meta" . }}
+
+  </head>
+  <body class="bg-white text-secondary-500 antialiased">
+    {{ partial "header" . }}
+    <main>{{ block "main" . }}{{ end }}</main>
+    <div id="global-footer">{{ partial "footer" . }}</div>
+    {{ partial "js" . }}
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<!-- Title of the page -->
+<title itemprop="name">{{ .Title }} - {{ .Site.Title }}</title>
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+
+<!-- Description of the page -->
+{{ with .Params.description }}
+  <meta name="description" content="{{ . }}" />
+  <meta itemprop="description" content="{{ . }}" />
+  <meta property="og:description" content="{{ . }}" />
+  <meta name="twitter:description" content="{{ . }}" />
+{{ else }}
+  <meta name="description" content="{{ .Site.Params.description }}" />
+  <meta itemprop="description" content="{{ .Site.Params.description }}" />
+  <meta property="og:description" content="{{ .Site.Params.description }}" />
+  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+{{ end }}
+
+
+<!-- Link of the page -->
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+<meta property="url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+
+<!-- Font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+<!-- Styles of the Page -->
+
+{{ $isDev := eq hugo.Environment "development" }}
+{{ $stylesheet := resources.Get "css/sailboat.css" }}
+{{ if not $isDev }}
+  {{ $stylesheet = $stylesheet | minify | fingerprint }}
+{{ end }}
+{{ with $stylesheet }}
+  {{ if $isDev }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" />
+  {{ else }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" />
+  {{ end }}
+  {{ $.Scratch.Set "stylesheet" . }}
+{{ end }}
+
+
+<!-- Image of the page -->
+{{ with .Params.image }}
+  <meta itemprop="image" content="{{ .Params.image | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Params.image | absURL }}" />
+  <meta property="og:image" content="{{ .Params.image | absURL }}" />
+  <meta name="twitter:image" content="{{ .Params.image | absURL }}" />
+{{ else }}
+  <meta itemprop="image" content="{{ .Site.Params.image | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.image | absURL }}" />
+  <meta property="og:image" content="{{ .Site.Params.image | absURL }}" />
+  <meta name="twitter:image" content="{{ .Site.Params.image | absURL }}" />
+{{ end }}
+
+
+<!-- Author Name -->
+{{ with .Params.authors }}
+  {{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+    <meta property="article:author" content="{{ .Title }}" />
+    <meta name="author" content="{{ .Title }}" />
+    <link rel="author" href="{{ .Permalink }}" />
+  {{ end }}
+{{ else }}
+  <meta property="article:author" content="{{ .Site.Params.author }}" />
+  <meta property="og:article:author" content="{{ .Site.Params.author }}" />
+  <meta name="author" content="{{ .Site.Params.author }}" />
+{{ end }}
+
+
+<!-- Language -->
+<meta property="og:locale" content="{{ .Language.Lang }}" />
+<meta name="language" content="{{ .Language.Lang }}" />
+
+<!-- Date of the page -->
+<meta property="og:updated_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
+
+<!-- Sitemap & RSS Feed Links -->
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}" />
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end }}
+
+
+<!-- Static Meta -->
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+<meta name="imagemode" content="force" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta property="og:type" content="website" />
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Google Analytics   -->
+
+{{ template "_internal/google_analytics_async.html" . }}
