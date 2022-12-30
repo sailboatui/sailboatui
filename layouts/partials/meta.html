@@ -3,12 +3,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 <!-- Title of the page -->
-<title itemprop="name">{{ .Title }} - {{ .Site.Title }}</title>
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+{{ if .IsHome }}
+  <title itemprop="name">{{ .Site.Title }} - {{ .Title }}</title>
+  <meta property="og:title" content="{{ .Site.Title }} - {{ .Title }}" />
+  <meta name="twitter:title" content="{{ .Site.Title }} - {{ .Title }}" />
+  <meta itemprop="name" content="{{ .Site.Title }} - {{ .Title }}" />
+  <meta name="application-name" content="{{ .Site.Title }} - {{ .Title }}" />
+  <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+{{ else }}
+  <title itemprop="name">{{ .Title }} - {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+  <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+  <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+  <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+{{ end }}
+
 
 <!-- Description of the page -->
 {{ with .Params.description }}
@@ -35,9 +45,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-
 <!-- Styles of the Page -->
-
 {{ $isDev := eq hugo.Environment "development" }}
 {{ $stylesheet := resources.Get "css/sailboat.css" }}
 {{ if not $isDev }}{{ $stylesheet = $stylesheet | minify | fingerprint }}{{ end }}
