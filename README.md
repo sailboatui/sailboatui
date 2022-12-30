@@ -87,6 +87,14 @@
   </tr>
 </table>
 
+## Installation
+
+```bash
+npm install -D tailwindcss
+```
+
+SailboatUI is a modern UI framework for Tailwind CSS, you just need to install Tailwind CSS and configure it. Learn [how to install Tailwind CSS](https://tailwindcss.com/docs/installation).
+
 ## Configuration
 
 You need to add this to your `tailwind.config.js` file.
