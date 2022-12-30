@@ -28,18 +28,18 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      // Set your fonts here
+      // Set font family
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
-      // Set your theme colors here(Required config!)
+      // Set theme colors (Required config!)
       colors: {
         primary: colors.blue,
         secondary: colors.slate,
       },
     },
   },
-  // Add plugins here
+  // Add plugins
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
 ```
@@ -57,7 +57,7 @@ const colors = require("tailwindcss/colors");
 2. Then you can set your own colors, more colors can be found in [Tailwind CSS Customizing Colors](https://tailwindcss.com/docs/customizing-colors).
 
 ```js
-// Set your theme colors here(Required config!)
+// Set theme colors (Required config!)
 colors: {
   primary: colors.blue,
   secondary: colors.slate,
@@ -67,7 +67,7 @@ colors: {
 1. You can also use <a href="https://uicolors.app/create" target="_blank">Tailwind CSS Color Shades Generator</a> to produce and configure your own colors.
 
 ```js
-// Set your theme colors here(Required config!)
+// Set theme colors (Required config!)
 colors: {
   primary: {
     50: "#e6f6ff",
@@ -95,7 +95,7 @@ We use `Inter` as the default font, You can easily use <a href="https://fonts.go
 Then you can add the `Inter` to the `tailwind.config.js` file.
 
 ```js
-// Set your fonts here
+// Set font family
 fontFamily: {
   sans: ["Inter", ...defaultTheme.fontFamily.sans],
 },
@@ -108,7 +108,7 @@ To use different fonts, simply replace the inter font with your preferred font.
 We use `@tailwindcss/typography` and `@tailwindcss/forms` plugins by default, you can add them to the `tailwind.config.js` file. It is not required, you can configure it as needed.
 
 ```js
-// Add plugins here
+// Add plugins
 plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 ```
 

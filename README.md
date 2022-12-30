@@ -99,18 +99,18 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      // Set your fonts here
+      // Set font family
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
-      // Set your theme colors here(Required config!)
+      // Set theme colors (Required config!)
       colors: {
         primary: colors.blue,
         secondary: colors.slate,
       },
     },
   },
-  // Add plugins here
+  // Add plugins
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
 ```
