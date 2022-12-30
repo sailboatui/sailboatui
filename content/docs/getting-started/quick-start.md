@@ -101,7 +101,7 @@ fontFamily: {
 },
 ```
 
-If you want to use other fonts, you can replace inter font with your own fonts.
+To use different fonts, simply replace the inter font with your preferred font.
 
 ### Plugins
 
