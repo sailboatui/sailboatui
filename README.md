@@ -115,7 +115,7 @@ module.exports = {
 };
 ```
 
-More configuration options are available in the [Sailboat Ui Quick Start](https://sailboatui.com/docs/getting-started/quick-start/).
+More configuration options are available in the [Sailboat UI Quick Start](https://sailboatui.com/docs/getting-started/quick-start/).
 
 ## Development
 

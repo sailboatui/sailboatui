@@ -18,7 +18,7 @@ SailboatUI is a modern UI framework for Tailwind CSS, you just need to install T
 
 ## Configuration
 
-You need to add it to your `tailwind.config.js` file.
+You need to add this to your `tailwind.config.js` file.
 
 ```js
 // tailwind.config.js
