@@ -86,3 +86,62 @@
     </td>
   </tr>
 </table>
+
+## Configuration
+
+You need to add this to your `tailwind.config.js` file.
+
+```js
+// tailwind.config.js
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {
+      // Set your fonts here
+      fontFamily: {
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      },
+      // Set your theme colors here(Required config!)
+      colors: {
+        primary: colors.blue,
+        secondary: colors.slate,
+      },
+    },
+  },
+  // Add plugins here
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+};
+```
+
+More configuration options are available in the [Sailboat UI Quick Start](https://sailboatui.com/docs/getting-started/quick-start/).
+
+## Development
+
+Sailboat UI is an open source project that you can contribute to on [GitHub](https://github.com/sailboatui/sailboatui). If you appreciate the project, please consider giving it a star to show your support. Thank you.
+
+1. You need [Hugo](https://gohugo.io/) to run the develop server. If you have [Homebrew](https://brew.sh/) you can do the following:
+
+```bash
+brew install hugo
+```
+
+2. Clone the repository and install the dependencies.
+
+```bash
+git clone git@github.com:sailboatui/sailboatui.git
+cd sailboatui
+npm install
+```
+
+3. Run the develop server.
+
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:1313/](http://localhost:1313/) in your browser.
+
+- `npm run dev`: Run the dev server.
+- `npm run build`: Build the static site.
