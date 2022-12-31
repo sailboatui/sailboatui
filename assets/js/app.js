@@ -40,7 +40,7 @@ if (aside) {
 
 document.querySelector("#toggleMenu").addEventListener("click", toggleMenu);
 
-function toggleMenu(e) {
+function toggleMenu() {
   document.querySelector("#toggleMenu").firstElementChild.classList.toggle("hidden");
   document.querySelector("#toggleMenu").lastElementChild.classList.toggle("hidden");
   document.querySelector("#mobile-menu").classList.toggle("hidden");
@@ -51,7 +51,7 @@ function toggleMenu(e) {
 // toggle TOC
 document.querySelector("#toggleTOC").addEventListener("click", toggleTOC);
 
-function toggleTOC(e) {
+function toggleTOC() {
   document.querySelector("#TOC").classList.toggle("hidden");
   document.querySelector("#aside").classList.toggle("h-80");
 }
