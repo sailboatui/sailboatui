@@ -1,14 +1,17 @@
 {{ define "main" }}
   {{ $heroBg := resources.Get "/images/hero-bg.png" }}
   <section
-    class="py-20 bg-cover bg-secondary-50 md:py-32"
+    class="py-20 bg-cover bg-secondary-50 md:py-40"
     style="background-image: url('  {{ $heroBg.RelPermalink }}')"
   >
     <div class="container px-6 mx-auto 2xl:px-32">
       <div class="text-center">
         <div>
-          <h1 class="text-4xl font-extrabold leading-tight text-secondary-900 md:text-6xl">
-            Build your website <br class="hidden md:block" />
+          <h1 class="text-3xl font-extrabold leading-snug text-secondary-900 md:text-6xl md:leading-tight">
+            Build your
+            <span class="sr-only">Website</span>
+            <span id="typed"></span>
+            <br />
             quickly with SailboatUI
           </h1>
           <p class="mx-auto mt-4 md:w-2/5">
@@ -71,4 +74,21 @@
       </div>
     </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed("#typed", {
+      strings: ["Website", "Blog", "Landing", "Podcast"],
+      typeSpeed: 200,
+      loop: true,
+      cursorChar: "_",
+      startDelay: 1000,
+      backDelay: 1000,
+    });
+  </script>
+  <style>
+    .typed-cursor {
+      font-weight: 400;
+      margin-left: 2px;
+    }
+  </style>
 {{ end }}
