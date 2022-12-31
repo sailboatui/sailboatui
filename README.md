@@ -11,7 +11,11 @@
   SailboatUI is a modern UI framework for Tailwind CSS
 </p>
 
-## 150+ Components
+## Documentation
+
+For full documentation, visit [sailboatui.com](https://sailboatui.com/).
+
+## Components
 
 <table>
   <tr>
