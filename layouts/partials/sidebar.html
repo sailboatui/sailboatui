@@ -1,8 +1,35 @@
 <aside
   id="aside"
-  class="fixed inset-0 top-24 right-auto z-20 hidden h-[calc(100vh-100px)] w-64 shrink-0 overflow-y-auto lg:left-[max(0px,calc(50%-30.5rem))] lg:block xl:left-[max(0px,calc(50%-38rem))]"
+  class="md:m-0md:h-[calc(100vh-100px)] sticky inset-0 right-auto z-20 -ml-6 -mr-6 shrink-0 overflow-y-auto border-y border-y-gray-100 bg-white px-6 md:fixed md:top-24 md:w-64 md:border-none md:bg-transparent md:px-0 lg:left-[max(0px,calc(50%-29.5rem))] lg:block xl:left-[max(0px,calc(50%-38.5rem))]"
 >
-  <div class="pb-10 pr-4">
+  <div class="flex items-center justify-between py-2.5 md:hidden">
+    <a id="toggleTOC" class="flex items-center gap-2 text-xs"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+      </svg>
+      Menu
+    </a>
+    <a href="#" class="text-sm">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-4 h-4"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+      </svg>
+    </a>
+  </div>
+  <div class="hidden -ml-2 md:m-0 md:block md:pb-10 md:pr-4" id="TOC">
     <nav class="text-sm capitalize ">
       <ul class="space-y-4">
         {{ $currentPage := . }}

@@ -1,12 +1,18 @@
+// Check if the user is on a mobile device
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 // Get the header element on the page
 var header = document.querySelector("header");
 function scrollTop() {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-  if (scrollTop > 0) {
-    header.classList.add("backdrop-blur", "bg-white/60", "shadow-sm");
-  } else {
-    // Otherwise, remove the background color
-    header.classList.remove("backdrop-blur", "bg-white/60", "shadow-sm");
+  if (!isMobile()) {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop > 0) {
+      header.classList.add("backdrop-blur", "bg-white/60", "shadow-sm");
+    } else {
+      // Otherwise, remove the background color
+      header.classList.remove("backdrop-blur", "bg-white/60", "shadow-sm");
+    }
   }
 }
 scrollTop();
@@ -19,17 +25,35 @@ window.addEventListener("scroll", function () {
 const aside = document.getElementById("aside");
 //Determine whether the element element exists
 if (aside) {
-  // 监听元素的 scroll 事件
   aside.addEventListener("scroll", function () {
     //Store it in local storage
     localStorage.setItem("scrollTop", aside.scrollTop);
   });
-
   //When the page reloads, get the scrolltop value stored locally and assign it to the aside element
   window.onload = function () {
     const scrollTop = localStorage.getItem("scrollTop");
     aside.scrollTop = scrollTop;
   };
+}
+
+// toggle menu
+
+document.querySelector("#toggleMenu").addEventListener("click", toggleMenu);
+
+function toggleMenu(e) {
+  document.querySelector("#toggleMenu").firstElementChild.classList.toggle("hidden");
+  document.querySelector("#toggleMenu").lastElementChild.classList.toggle("hidden");
+  document.querySelector("#mobile-menu").classList.toggle("hidden");
+  document.querySelector("#header").classList.toggle("bg-white");
+  document.querySelector("body").classList.toggle("overflow-hidden");
+}
+
+// toggle TOC
+document.querySelector("#toggleTOC").addEventListener("click", toggleTOC);
+
+function toggleTOC(e) {
+  document.querySelector("#TOC").classList.toggle("hidden");
+  document.querySelector("#aside").classList.toggle("h-80");
 }
 
 // Select all iframe elements
