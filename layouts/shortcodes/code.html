@@ -1,6 +1,6 @@
-<section x-data="{ activeTab:  0 }" class="mt-8 max-w-none last:mt-0">
+<section x-data="{ activeTab:  0 }" class="mt-8 max-w-none">
   <div class="flex items-center justify-between not-prose">
-    <h2 class="text-lg font-medium text-secondary-900" id="{{ .Get "ctitle" }}">
+    <h2 class="pr-4 text-lg font-medium truncate text-secondary-900" id="{{ .Get "ctitle" }}">
       <a href="#{{ .Get "ctitle" }}">{{ .Get "ctitle" }}</a>
     </h2>
     <div class="flex items-center gap-4">
@@ -26,7 +26,7 @@
           </li>
         </ul>
       </div>
-      <div class="flex" x-data="{ tooltip: 'Copied!' }">
+      <div class="hidden md:flex" x-data="{ tooltip: 'Copied!' }">
         <button
           x-tooltip.on.click="tooltip"
           onclick="navigator.clipboard.writeText({{ .Inner | safeHTMLAttr }});"
