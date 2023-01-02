@@ -139,16 +139,16 @@ menu:
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/animations/scale.css" />
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/animations/perspective.css" />
 <div class="flex justify-center space-x-5">
-  <span x-data="{ tooltip: 'This is a top tooltip.' }">
+  <span x-data="{ tooltip: 'This is a fade tooltip.' }">
     <button
       type="button"
       x-tooltip="tooltip"
       class="px-4 py-2 text-sm font-medium text-center text-gray-700 transition-all bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
     >
-      fade
+      Fade
     </button>
   </span>
-  <span x-data="{ tooltip: 'This is a right tooltip.' }">
+  <span x-data="{ tooltip: 'This is a shift away tooltip.' }">
     <button
       type="button"
       x-tooltip.animation.shift-away="tooltip"
@@ -157,7 +157,7 @@ menu:
       Shift away
     </button>
   </span>
-  <span x-data="{ tooltip: 'This is a right tooltip.' }">
+  <span x-data="{ tooltip: 'This is a scale tooltip.' }">
     <button
       type="button"
       x-tooltip.animation.scale="tooltip"
@@ -166,7 +166,7 @@ menu:
       Scale
     </button>
   </span>
-  <span x-data="{ tooltip: 'This is a right tooltip.' }">
+  <span x-data="{ tooltip: 'This is a perspective tooltip.' }">
     <button
       type="button"
       x-tooltip.animation.perspective="tooltip"
@@ -183,7 +183,7 @@ menu:
 <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/dist/tippy.css" />
 <div class="flex justify-center space-x-5">
-  <span x-data="{ tooltip: 'This is a top tooltip.' }">
+  <span x-data="{ tooltip: 'This is a tooltip.' }">
     <button
       type="button"
       x-tooltip.arrowless="tooltip"
