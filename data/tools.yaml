@@ -1,0 +1,130 @@
+---
+- taxonomy: Components
+  links:
+    - title: Tailwind UI
+      logo: /logos/logo01.png
+      url: https://tailwindui.com/
+      description: Component library made with Tailwind CSS
+    - title: Sailboat UI
+      logo: /logos/logo02.png
+      url: https://sailboatui.com/
+      description: Modern UI framework for Tailwind CSS
+    - title: Tailwind Elements
+      logo: /logos/logo03.png
+      url: https://tailwind-elements.com/
+      description: Bootstrap components recreated with Tailwind CSS
+    - title: daisyUI
+      logo: /logos/logo04.png
+      url: https://daisyui.com/
+      description: Use Tailwind CSS but write fewer class names
+    - title: Flowbite
+      logo: /logos/logo05.png
+      url: https://flowbite.com/
+      description: Open-source component library built with Tailwind CSS
+    - title: HyperUI
+      logo: /logos/logo06.png
+      url: https://www.hyperui.dev/
+      description: Free Open Source Tailwind CSS Components
+    - title: Myna UI
+      logo: /logos/logo07.png
+      url: https://mynaui.com/
+      description: UI Components and Elements made with Tailwind CSS
+    - title: Meraki UI
+      logo: /logos/logo08.png
+      url: https://merakiui.com/
+      description: Meraki UI Free Tailwind CSS Components
+
+- taxonomy: Tools
+  links:
+    - title: Tailwind Play
+      logo: /logos/logo01.png
+      url: https://play.tailwindcss.com/
+      description: An advanced online playground for Tailwind CSS
+    - title: CSS to TailwindCSS
+      logo: /logos/logo09.png
+      url: https://transform.tools/css-to-tailwind
+      description: Convert your CSS to Tailwind CSS
+    - title: Color Shades Generator
+      logo: /logos/logo10.png
+      url: https://uicolors.app/create
+      description: Create Tailwind CSS color families
+    - title: Gradient Designer
+      logo: /logos/logo11.png
+      url: https://gradient-designer.csspost.com/
+      description: Make beautiful gradients for Tailwind CSS
+    - title: Windy
+      logo: /logos/logo12.png
+      url: https://usewindy.com/
+      description: Copy elements from any website as a Tailwind CSS component
+
+- taxonomy: Plugins
+  links:
+    - title: "@tailwindcss/typography"
+      logo: /logos/logo01.png
+      url: https://github.com/tailwindlabs/tailwindcss-typography
+      description: Beautiful typographic defaults for HTML you don't control
+    - title: "@tailwindcss/forms"
+      logo: /logos/logo01.png
+      url: https://github.com/tailwindlabs/tailwindcss-forms
+      description: A plugin that provides a basic reset for form styles that makes form elements easy to override with utilities
+    - title: "@tailwindcss/line-clamp"
+      logo: /logos/logo01.png
+      url: https://github.com/tailwindlabs/tailwindcss-line-clamp
+      description: A plugin that provides utilities for visually truncating text after a fixed number of lines
+    - title: tailwindcss-animate
+      logo: /logos/logo11.png
+      url: https://github.com/jamiebuilds/tailwindcss-animate
+      description: A Tailwind CSS plugin for creating beautiful animations
+    - title: prettier-plugin-tailwindcss
+      logo: /logos/logo11.png
+      url: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+      description: A Prettier plugin for Tailwind CSS that automatically sorts classes based on our recommended class order
+
+- taxonomy: Extensions
+  links:
+    - title: Tailwind CSS IntelliSense
+      logo: /logos/logo01.png
+      url: https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+      description: Intelligent Tailwind CSS tooling for VS Code
+    - title: WindiCSS IntelliSense
+      logo: /logos/logo13.png
+      url: https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense
+      description: Intelligent WindiCSS tooling for VS Code
+    - title: Tailwind Shades
+      logo: /logos/logo14.png
+      url: https://marketplace.visualstudio.com/items?itemName=bourhaouta.tailwindshades
+      description: Tailwind CSS color palette generator
+    - title: Tailwind Docs
+      logo: /logos/logo15.png
+      url: https://marketplace.visualstudio.com/items?itemName=austenc.tailwind-docs
+      description: Easily access the Tailwind CSS documentation from within Code
+
+- taxonomy: Tutorials
+  links:
+    - title: Tailwind Labs
+      logo: /logos/logo01.png
+      url: https://www.youtube.com/c/TailwindLabs/videos
+      description: Official YouTube channel for Tailwind CSS
+    - title: The Net Ninja
+      logo: /logos/logo16.png
+      url: https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw
+      description: In this tailwind css tutorial we'll take a look at what tailwind css is, how to use it & set up a new project.
+    - title: Tailwind CSS for Beginners
+      logo: /logos/logo17.png
+      url: https://www.youtube.com/playlist?list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft
+      description: Learn Tailwind CSS in this tutorial series. From dev environment set up and useful VS Code extensions to building and deploying a complete project with Tailwind!
+
+- taxonomy: Cases
+  links:
+    - title: The Verge
+      logo: /logos/logo18.png
+      url: https://www.theverge.com/
+      description: Technology website
+    - title: GitHub Next
+      logo: /logos/logo19.png
+      url: https://githubnext.com/
+      description: Developer website
+    - title: Netflix Top 10
+      logo: /logos/logo20.png
+      url: https://top10.netflix.com/
+      description: Landing page

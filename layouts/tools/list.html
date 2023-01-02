@@ -1,0 +1,44 @@
+{{ define "main" }}
+  {{ $current := . }}
+  <section class="py-24">
+    <div class="container px-6 mx-auto 2xl:px-32">
+      <div>
+        <h1 class="text-3xl font-bold capitalize text-secondary-900">
+          <a href="https://github.com/sailboatui/best-tailwindcss" target="_blank" class=" hover:text-primary-500"
+            >{{ .Title }}</a
+          >
+        </h1>
+        <p class="mt-4">{{ .Params.description }}</p>
+      </div>
+      <div class="mt-10 space-y-10">
+        {{ range .Site.Data.tools }}
+          <div>
+            <h3 class="text-lg font-medium text-secondary-700" id="{{ md5 .taxonomy }}">
+              {{ .taxonomy }}
+            </h3>
+            <div class="grid grid-cols-1 gap-6 mt-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+              {{ range .links }}
+                <a
+                  class="p-6 overflow-hidden transition-all duration-300 bg-white border group rounded-2xl border-secondary-200 hover:-translate-y-1 hover:shadow-sm"
+                  href="{{ .url }}"
+                  target="_blank"
+                  title="{{ .title }}"
+                >
+                  <div class="flex items-center gap-2">
+                    <div class="flex-none overflow-hidden bg-white border rounded-lg border-secondary-100">
+                      <img class="w-8 h-8 " src="{{ .logo }}" alt="{{ .title }}" />
+                    </div>
+                    <h4 class="font-medium text-secondary-700 line-clamp-2 group-hover:text-primary-500">
+                      {{ .title }}
+                    </h4>
+                  </div>
+                  <p class="mt-4 text-sm text-slate-400 line-clamp-2">{{ .description }}</p>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
