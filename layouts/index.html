@@ -1,19 +1,20 @@
 {{ define "main" }}
   {{ $heroBg := resources.Get "/images/hero-bg.png" }}
   <section
-    class="py-20 bg-cover bg-secondary-50 md:py-32"
+    class="py-20 bg-cover bg-secondary-50 md:py-40"
     style="background-image: url('  {{ $heroBg.RelPermalink }}')"
   >
     <div class="container px-6 mx-auto 2xl:px-32">
       <div class="text-center">
         <div>
-          <h1 class="text-4xl font-extrabold leading-tight text-secondary-900 md:text-6xl">
-            Build your website <br class="hidden md:block" />
+          <h1 class="text-3xl font-extrabold text-secondary-900 md:text-6xl md:leading-tight">
+            Build your website
+            <br />
             quickly with SailboatUI
           </h1>
-          <p class="mx-auto mt-4 md:w-2/5">
-            SailboatUI is a modern UI framework for Tailwind CSS. We can save you a lot of time and provide many
-            components.
+          <p class="mx-auto mt-4 lg:w-1/2">
+            Sailboat UI is a modern UI framework for Tailwind CSS. Get started with 150+ open source Tailwind CSS
+            components, make it easy to build you products.
           </p>
           <div class="inline-flex flex-wrap gap-4 mt-10 md:flex-nowrap">
             <a
@@ -37,7 +38,7 @@
   <section class="py-20">
     <div class="container px-6 mx-auto 2xl:px-32">
       <div class="text-center">
-        <h2 class="text-4xl font-bold text-secondary-900">150+ Components</h2>
+        <h2 class="text-4xl font-bold text-secondary-900">Components</h2>
         <h3 class="mt-4 md:text-lg">We will provide everything you can think of.</h3>
       </div>
       <div class="grid grid-cols-1 gap-6 mt-14 sm:grid-cols-2 md:grid-cols-4">
@@ -55,7 +56,9 @@
               />
             </div>
             <div class="p-4">
-              <h4 class="font-medium transition-colors text-slate-900 group-hover:text-primary-500">{{ .Title }}</h4>
+              <h4 class="font-medium transition-colors text-slate-900 group-hover:text-primary-500">
+                {{ .Title }}
+              </h4>
               <p class="text-sm">{{ .Params.components }} components</p>
             </div>
           </a>
