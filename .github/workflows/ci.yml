@@ -1,0 +1,19 @@
+name: Continuous Integration
+
+# This action works with pull requests and pushes
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2 # Check out the repository first.
+      - uses: actionsx/prettier@v2
+        with:
+          # prettier CLI arguments.
+          args: --check .
