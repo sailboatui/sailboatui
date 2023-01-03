@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: [require.resolve("prettier-plugin-go-template")],
   tabWidth: 2,
   printWidth: 120,
   overrides: [
@@ -9,5 +8,6 @@ module.exports = {
         parser: "go-template",
       },
     },
-  ]
+  ],
+  plugins: [require.resolve("prettier-plugin-go-template"), require.resolve("prettier-plugin-tailwindcss")],
 };
