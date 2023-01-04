@@ -1,6 +1,6 @@
 ---
 title: "Quick Start"
-description: "Get started with SailboatUI in minutes."
+description: "Get started with Sailboat UI in minutes."
 menu:
   docs:
     parent: "getting-started"
@@ -12,7 +12,7 @@ menu:
 npm install -D tailwindcss
 ```
 
-SailboatUI is a modern UI framework for Tailwind CSS, you just need to install Tailwind CSS and configure it. Learn [how to install Tailwind CSS](https://tailwindcss.com/docs/installation).
+Sailboat UI is a modern UI framework for Tailwind CSS, you just need to install Tailwind CSS and configure it. Learn [how to install Tailwind CSS](https://tailwindcss.com/docs/installation).
 
 ---
 
@@ -46,7 +46,7 @@ module.exports = {
 
 ### Theme
 
-We add two colors to the theme, `primary` and `secondary`, you can set your own colors. This is a required configuration, please configure it according to your own needs.
+We add two colors to the theme, `primary` and `secondary`, you can set your colors. This is a required configuration, please configure it according to your own needs.
 
 1. First you net import the colors from `tailwindcss/colors`.
 
@@ -54,7 +54,7 @@ We add two colors to the theme, `primary` and `secondary`, you can set your own 
 const colors = require("tailwindcss/colors");
 ```
 
-2. Then you can set your own colors, more colors can be found in [Tailwind CSS Customizing Colors](https://tailwindcss.com/docs/customizing-colors).
+2. Then you can set your colors, more colors can be found in [Tailwind CSS Customizing Colors](https://tailwindcss.com/docs/customizing-colors).
 
 ```js
 // Set theme colors (Required config!)
@@ -64,7 +64,7 @@ colors: {
 },
 ```
 
-1. You can also use <a href="https://uicolors.app/create" target="_blank">Tailwind CSS Color Shades Generator</a> to produce and configure your own colors.
+1. You can also use <a href="https://uicolors.app/create" target="_blank">Tailwind CSS Color Shades Generator</a> to produce and configure your colors.
 
 ```js
 // Set theme colors (Required config!)
@@ -101,7 +101,7 @@ fontFamily: {
 },
 ```
 
-To use different fonts, simply replace the inter font with your preferred font.
+To use different fonts, simply replace the font "inter" with your preferred font.
 
 ### Plugins
 
@@ -116,7 +116,7 @@ More plugins can be found in [Tailwind CSS Plugins](https://tailwindcss.com/docs
 
 ### JavaScript
 
-We use a lightweight JavaScript framework <a href="https://alpinejs.dev/" target="_blank">Alpine.js</a> in Dropdown, Tab and other components, you can easily use it in your project.
+We use a lightweight JavaScript framework <a href="https://alpinejs.dev/" target="_blank">Alpine.js</a> in Dropdown, Tab, and other components, you can easily use it in your project.
 
 ```html
 <!-- Alpine.js -->
@@ -140,23 +140,16 @@ We use a lightweight JavaScript framework <a href="https://alpinejs.dev/" target
 
 ## Development
 
-Sailboat UI is an open source project that you can contribute to on [GitHub](https://github.com/sailboatui/sailboatui). If you appreciate the project, please consider giving it a star to show your support. Thank you.
+Sailboat UI is an open-source project that you can contribute to on [GitHub](https://github.com/sailboatui/sailboatui). If you appreciate the project, please consider giving it a star to show your support. Thank you.
 
-1. You need [Hugo](https://gohugo.io/) to run the develop server. If you have [Homebrew](https://brew.sh/) you can do the following:
+1. You need [Hugo](https://gohugo.io/) to run the development server. If you have [Homebrew](https://brew.sh/) you can do the following:
 
 ```bash
 brew install hugo
 ```
 
 2. Clone the repository and install the dependencies.
-
-```bash
-git clone git@github.com:sailboatui/sailboatui.git
-cd sailboatui
-npm install
-```
-
-3. Run the develop server.
+   Run the development server.
 
 ```bash
 npm run dev

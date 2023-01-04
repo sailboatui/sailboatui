@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ $current := . }}
   <section class="py-24">
-    <div class="container px-6 mx-auto 2xl:px-32">
+    <div class="container mx-auto px-6 2xl:px-32">
       <div>
         <h1 class="text-3xl font-bold capitalize text-secondary-900">
           <a href="https://github.com/sailboatui/best-tailwindcss" target="_blank" class=" hover:text-primary-500"
@@ -16,17 +16,17 @@
             <h3 class="text-lg font-medium text-secondary-700" id="{{ md5 .taxonomy }}">
               {{ .taxonomy }}
             </h3>
-            <div class="grid grid-cols-1 gap-6 mt-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            <div class="mt-5 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
               {{ range .links }}
                 <a
-                  class="p-6 overflow-hidden transition-all duration-300 bg-white border group rounded-2xl border-secondary-200 hover:-translate-y-1 hover:shadow-sm"
+                  class="group overflow-hidden rounded-2xl border border-secondary-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-sm"
                   href="{{ .url }}"
                   target="_blank"
                   title="{{ .title }}"
                 >
                   <div class="flex items-center gap-2">
-                    <div class="flex-none overflow-hidden bg-white border rounded-lg border-secondary-100">
-                      <img class="w-8 h-8 " src="{{ .logo }}" alt="{{ .title }}" />
+                    <div class="flex-none overflow-hidden rounded-lg border border-secondary-100 bg-white">
+                      <img class="h-8 w-8 " src="{{ .logo }}" alt="{{ .title }}" />
                     </div>
                     <h4 class="font-medium text-secondary-700 line-clamp-2 group-hover:text-primary-500">
                       {{ .title }}

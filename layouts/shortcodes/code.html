@@ -1,6 +1,6 @@
 <section x-data="{ activeTab:  0 }" class="mt-8 max-w-none">
-  <div class="flex items-center justify-between not-prose">
-    <h2 class="pr-4 text-lg font-medium truncate text-secondary-900" id="{{ .Get "ctitle" }}">
+  <div class="not-prose flex items-center justify-between">
+    <h2 class="truncate pr-4 text-lg font-medium text-secondary-900" id="{{ .Get "ctitle" }}">
       <a href="#{{ .Get "ctitle" }}">{{ .Get "ctitle" }}</a>
     </h2>
     <div class="flex items-center gap-4">
@@ -39,7 +39,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-5 h-5"
+              class="h-5 w-5"
             >
               <path
                 stroke-linecap="round"
@@ -66,7 +66,7 @@
       {{ end }}
       {{ with $stylesheet }}
         <iframe
-          class="w-full overflow-hidden rounded-lg h-80 ring-1 ring-secondary-200"
+          class="h-80 w-full overflow-hidden rounded-lg ring-1 ring-secondary-200"
           srcdoc="<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel='stylesheet' type='text/css' href='{{ .RelPermalink }}' crossorigin='anonymous' /><script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js' defer integrity='sha512-y22y4rJ9d7NGoRLII5LVwUv0BfQKf6MpATy5ebVu/fbHdtJCxBpZRHZMHJv8VYl8scWjuwZcMPzwYk4sEoyL4A==' crossorigin='anonymous' referrerpolicy='no-referrer'></script></head>
                     <body class='antialiased bg-primary-50/20 text-secondary-500'>
                       <div class='flex items-center justify-center min-h-screen'>
@@ -85,7 +85,7 @@
       x-show.transition.in.opacity.duration.600="activeTab === 1"
       class="hidden"
     >
-      <div class="relative prose max-w-none" id="code">
+      <div class="prose relative max-w-none" id="code">
         {{ .Scratch.Set "finalCode" (replace .Inner "\n<" "<" 1) }}
         {{ highlight (.Scratch.Get "finalCode") "html" }}
       </div>

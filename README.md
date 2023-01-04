@@ -8,12 +8,12 @@
 </p>
 
 <p align="center">
-  SailboatUI is a modern UI framework for Tailwind CSS
+  Sailboat UI is a modern UI framework for Tailwind CSS
 </p>
 
 ## Documentation
 
-For full documentation, visit [sailboatui.com](https://sailboatui.com/).
+For the full documentation, visit [sailboatui.com](https://sailboatui.com/).
 
 ## Components
 
@@ -97,7 +97,7 @@ For full documentation, visit [sailboatui.com](https://sailboatui.com/).
 npm install -D tailwindcss
 ```
 
-SailboatUI is a modern UI framework for Tailwind CSS, you just need to install Tailwind CSS and configure it. Learn [how to install Tailwind CSS](https://tailwindcss.com/docs/installation).
+Sailboat UI is a modern UI framework for Tailwind CSS, you just need to install Tailwind CSS and configure it. Learn [how to install Tailwind CSS](https://tailwindcss.com/docs/installation).
 
 ## Configuration
 
@@ -131,23 +131,16 @@ More configuration options are available in the [Sailboat UI Quick Start](https:
 
 ## Development
 
-Sailboat UI is an open source project that you can contribute to on [GitHub](https://github.com/sailboatui/sailboatui). If you appreciate the project, please consider giving it a star to show your support. Thank you.
+Sailboat UI is an open-source project that you can contribute to on [GitHub](https://github.com/sailboatui/sailboatui). If you appreciate the project, please consider giving it a star to show your support. Thank you.
 
-1. You need [Hugo](https://gohugo.io/) to run the develop server. If you have [Homebrew](https://brew.sh/) you can do the following:
+1. You need [Hugo](https://gohugo.io/) to run the development server. If you have [Homebrew](https://brew.sh/) you can do the following:
 
 ```bash
 brew install hugo
 ```
 
 2. Clone the repository and install the dependencies.
-
-```bash
-git clone git@github.com:sailboatui/sailboatui.git
-cd sailboatui
-npm install
-```
-
-3. Run the develop server.
+   Run the development server.
 
 ```bash
 npm run dev
