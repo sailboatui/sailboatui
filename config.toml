@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Sailboat UI'
 
 [params]
-  description = 'SailboatUI is a modern UI framework for Tailwind CSS. We can save you a lot of time and provide many components.'
+  description = 'Sailboat UI is a modern UI framework for Tailwind CSS. We can save you a lot of time and provide many components.'
 
 [menu]
 

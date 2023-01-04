@@ -1,8 +1,8 @@
 <header class="absolute top-0 left-0 right-0 z-50 py-4 md:fixed md:transition-all" id="header">
-  <div class="container justify-between px-6 mx-auto md:flex 2xl:px-32">
+  <div class="container mx-auto justify-between px-6 md:flex 2xl:px-32">
     <div class="flex items-center justify-between">
       <a href="/" title="sailboat UI">
-        <svg class="w-auto h-6 md:h-8" viewBox="0 0 150 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="h-6 w-auto md:h-8" viewBox="0 0 150 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -22,7 +22,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-6 h-6"
+          class="h-6 w-6"
         >
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -32,17 +32,17 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="hidden w-6 h-6"
+          class="hidden h-6 w-6"
         >
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </a>
     </div>
     <nav
-      class="fixed inset-x-0 bottom-0 items-center hidden gap-8 px-6 bg-white top-14 text-secondary-700 md:static md:flex md:bg-transparent md:p-0"
+      class="fixed inset-x-0 bottom-0 top-14 hidden items-center gap-8 bg-white px-6 text-secondary-700 md:static md:flex md:bg-transparent md:p-0"
       id="mobile-menu"
     >
-      <ul class="items-center gap-8 mt-5 space-y-6 font-medium md:mt-0 md:flex md:space-y-0">
+      <ul class="mt-5 items-center gap-8 space-y-6 font-medium md:mt-0 md:flex md:space-y-0">
         <li>
           <a href="/docs/getting-started/quick-start/" class="block hover:text-blue-500">Docs</a>
         </li>
@@ -50,7 +50,10 @@
           <a href="/docs/components/accordion/" class="block hover:text-blue-500">Components</a>
         </li>
         <li>
-          <a href="#" class="flex items-center w-full gap-1 hover:text-blue-500"
+          <a
+            href="https://sailboatui.substack.com/"
+            class="flex w-full items-center gap-1 hover:text-blue-500"
+            target="_blank"
             >Sections <small class="text-secondary-400">soon</small></a
           >
         </li>
@@ -58,8 +61,8 @@
           <a href="/tools/" class="block hover:text-blue-500">Tools</a>
         </li>
       </ul>
-      <div class="hidden w-px h-5 bg-secondary-500/10 md:block"></div>
-      <ul class="items-center gap-5 mt-6 space-y-6 font-medium md:mt-0 md:flex md:space-y-0">
+      <div class="hidden h-5 w-px bg-secondary-500/10 md:block"></div>
+      <ul class="mt-6 items-center gap-5 space-y-6 font-medium md:mt-0 md:flex md:space-y-0">
         <li>
           <a
             href="https://github.com/sailboatui/sailboatui"

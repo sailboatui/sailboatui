@@ -108,11 +108,11 @@
     - title: The Net Ninja
       logo: /logos/logo16.png
       url: https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw
-      description: In this tailwind css tutorial we'll take a look at what tailwind css is, how to use it & set up a new project.
+      description: In this tailwind CSS tutorial we'll take a look at what tailwind CSS is, how to use it & set up a new project.
     - title: Tailwind CSS for Beginners
       logo: /logos/logo17.png
       url: https://www.youtube.com/playlist?list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft
-      description: Learn Tailwind CSS in this tutorial series. From dev environment set up and useful VS Code extensions to building and deploying a complete project with Tailwind!
+      description: Learn Tailwind CSS in this tutorial series. From dev environment setup and useful VS Code extensions to building and deploying a complete project with Tailwind!
 
 - taxonomy: Cases
   links:
