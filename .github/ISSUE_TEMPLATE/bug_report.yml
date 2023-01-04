@@ -1,6 +1,6 @@
-name: 🐞 Bug report
+name: Bug report
 description: Something is not working as expected.
-title: 🐞 YOUR_DESCRIPTION
+title: YOUR_DESCRIPTION
 labels: bug
 
 body:
