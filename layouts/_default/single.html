@@ -1,9 +1,9 @@
 {{ define "main" }}
-  <section class="pt-14 md:pt-24">
+  <section class="pt-14 lg:pt-24">
     <div class="container mx-auto px-6 2xl:px-32">
-      <div class="relative w-full md:flex">
+      <div class="relative w-full lg:flex">
         {{ partial "sidebar" . }}
-        <div class="mt-4 w-full min-w-0 max-w-full md:mt-0 lg:pl-72">
+        <div class="mt-4 w-full min-w-0 max-w-full lg:mt-0 lg:pl-72">
           <p class="text-sm font-medium capitalize text-primary-500">{{ .Params.menu.docs.parent }}</p>
           <h1 class="mt-1 text-3xl font-bold capitalize text-secondary-900">{{ .Title }}</h1>
           <p class="mt-2">{{ .Params.description }}</p>
