@@ -22,5 +22,5 @@ jobs:
         uses: creyD/prettier_action@v4.2
         with:
           # This part is also where you can pass other options, for example:
-          prettier_options: --write **/*.{md,html,yml,toml,json}
+          prettier_options: --write **/*.{md,yml,json}
           prettier_plugins: "prettier-plugin-tailwindcss prettier-plugin-go-template"
