@@ -1,0 +1,20 @@
+name: 📘 Doc improvement
+description: Improvements or additions to documentation
+title: 📘 YOUR_DESCRIPTION
+labels: documentation
+
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: >-
+        A clear and concise description of what the edit is.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: >-
+        A clear and concise description of what you expected to happen.
+    validations:

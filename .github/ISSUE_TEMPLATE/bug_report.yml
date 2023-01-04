@@ -1,0 +1,29 @@
+name: 🐞 Bug report
+description: Something is not working as expected.
+title: 🐞 YOUR_DESCRIPTION
+labels: bug
+
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: >-
+        A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: To Reproduce
+      description: >-
+        Steps to reproduce the behavior.
+      placeholder: |
+        1. click ...
+    validations:
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: >-
+        A clear and concise description of what you expected to happen.
+    validations:
