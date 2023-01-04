@@ -49,7 +49,7 @@ function toggleMenu() {
 }
 
 // toggle TOC
-document.querySelector("#toggleTOC").addEventListener("click", toggleTOC);
+document.querySelector("#toggleTOC")?.addEventListener("click", toggleTOC);
 
 function toggleTOC() {
   document.querySelector("#TOC").classList.toggle("hidden");
@@ -80,4 +80,15 @@ iframes.forEach((iframe) => {
       });
     });
   });
+});
+
+//a function to get the current year
+function getCurrentYear() {
+  return new Date()?.getFullYear();
+}
+
+//update the copyright year automatically
+const yearSpans = document.querySelectorAll("span.year");
+yearSpans.forEach((yearSpan) => {
+  yearSpan.innerText = getCurrentYear();
 });
