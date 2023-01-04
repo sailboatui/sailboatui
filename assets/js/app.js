@@ -49,7 +49,7 @@ function toggleMenu() {
 }
 
 // toggle TOC
-document.querySelector("#toggleTOC").addEventListener("click", toggleTOC);
+document.querySelector("#toggleTOC")?.addEventListener("click", toggleTOC);
 
 function toggleTOC() {
   document.querySelector("#TOC").classList.toggle("hidden");
