@@ -1,1 +1,12 @@
 mode: chatops
+branches:
+  - label: enhancement
+    prefix: feature/
+  - label: bug
+    prefix: bugfix/
+  - label: "documentation"
+    prefix: doc/
+  - label: "*"
+    prefix: issues/
+openPR: true
+prSkipCI: true
