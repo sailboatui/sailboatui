@@ -5,7 +5,12 @@
         {{ partial "sidebar" . }}
         <div class="mt-4 w-full min-w-0 max-w-full lg:mt-0 lg:pl-72">
           <p class="text-sm font-medium capitalize text-primary-500">{{ .Params.menu.docs.parent }}</p>
-          <h1 class="mt-1 text-3xl font-bold capitalize text-secondary-900">{{ .Title }}</h1>
+          <h1 class="mt-1 text-3xl font-bold capitalize text-secondary-900">
+            {{ if .Params.components }}
+              Tailwind CSS
+            {{ end }}
+            {{ .Title }}
+          </h1>
           <p class="mt-2">{{ .Params.description }}</p>
           <div
             class="prose mt-10 max-w-none prose-a:font-medium prose-a:decoration-primary-500 prose-a:underline-offset-2 hover:prose-a:text-primary-500 prose-pre:shadow-md"
