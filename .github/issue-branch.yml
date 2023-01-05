@@ -4,7 +4,7 @@ branches:
     prefix: feature/
   - label: bug
     prefix: bugfix/
-  - label: "documentation"
+  - label: documentation
     prefix: doc/
   - label: "*"
     prefix: issues/
