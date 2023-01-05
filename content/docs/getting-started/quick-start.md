@@ -4,6 +4,9 @@ description: "Get started with Sailboat UI in minutes."
 menu:
   docs:
     parent: "getting-started"
+
+next: Accordion
+nextLink: /docs/components/accordion/
 ---
 
 ## Installation
