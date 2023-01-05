@@ -14,10 +14,10 @@
           </div>
           <div class="my-10 flex justify-between">
             <div>
-              {{ if .NextPage }}
+              {{ if .Params.previous }}
                 <a
                   class="flex items-center gap-1 font-medium capitalize hover:text-secondary-900"
-                  href="{{ .NextPage.RelPermalink }}"
+                  href="{{ .Params.previousLink }}"
                   ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
                     <path
                       fill-rule="evenodd"
@@ -25,17 +25,17 @@
                       clip-rule="evenodd"
                     />
                   </svg>
-                  {{ .NextPage.Title | truncate 50 "..." }}</a
+                  {{ .Params.previous | truncate 50 "..." }}</a
                 >
               {{ end }}
             </div>
 
             <div>
-              {{ if .PrevPage }}
+              {{ if .Params.next }}
                 <a
                   class="flex items-center gap-1 font-medium capitalize hover:text-secondary-900"
-                  href="{{ .PrevPage.RelPermalink }}"
-                  >{{ .PrevPage.Title | truncate 50 "..." }}
+                  href="{{ .Params.nextLink }}"
+                  >{{ .Params.next | truncate 50 "..." }}
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
                     <path
                       fill-rule="evenodd"
