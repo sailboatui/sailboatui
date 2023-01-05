@@ -1,7 +1,7 @@
 {
   "name": "sailboatui",
   "version": "0.1.1",
-  "description": "A modern UI framework for Tailwind CSS",
+  "description": "A modern UI component library for Tailwind CSS",
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",

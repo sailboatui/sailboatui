@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  Sailboat UI is a modern UI framework for Tailwind CSS
+  Sailboat UI is a modern UI component library for Tailwind CSS
 </p>
 
 ## Documentation
@@ -97,7 +97,7 @@ For the full documentation, visit [sailboatui.com](https://sailboatui.com/).
 npm install -D tailwindcss
 ```
 
-Sailboat UI is a modern UI framework for Tailwind CSS, you just need to install Tailwind CSS and configure it. Learn [how to install Tailwind CSS](https://tailwindcss.com/docs/installation).
+Sailboat UI is a modern UI component library for Tailwind CSS, you just need to install Tailwind CSS and configure it. Learn [how to install Tailwind CSS](https://tailwindcss.com/docs/installation).
 
 ## Configuration
 
