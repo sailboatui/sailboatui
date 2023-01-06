@@ -1,6 +1,7 @@
 {
   "tabWidth": 2,
-  "printWidth": 120,
+  "printWidth": 99999,
+  "bracketSameLine": true,
   "overrides": [
     {
       "files": ["*.html"],
@@ -9,5 +10,5 @@
       }
     }
   ],
-  "plugins": ["prettier-plugin-tailwindcss","prettier-plugin-go-template"]
+  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-go-template"]
 }

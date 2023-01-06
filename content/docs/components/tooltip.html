@@ -18,20 +18,8 @@ nextLink: /docs/forms/checkbox/
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/dist/tippy.css" />
 <div class="flex justify-center space-x-5">
   <div x-data="{ tooltip: 'This is a tooltip.' }">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="h-6 w-6 cursor-pointer text-secondary-500"
-      x-tooltip="tooltip"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
-      />
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 cursor-pointer text-secondary-500" x-tooltip="tooltip">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
     </svg>
   </div>
 </div>
@@ -47,22 +35,10 @@ nextLink: /docs/forms/checkbox/
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/animations/perspective.css" />
 <div class="flex justify-center space-x-5">
   <div x-data="{ tooltip: 'This is a dark tooltip.' }">
-    <button
-      type="button"
-      x-tooltip="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Dark
-    </button>
+    <button type="button" x-tooltip="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Dark</button>
   </div>
   <div x-data="{ tooltip: 'This is a light tooltip.' }">
-    <button
-      type="button"
-      x-tooltip.theme.light="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Light
-    </button>
+    <button type="button" x-tooltip.theme.light="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Light</button>
   </div>
 </div>
 {{< /code >}}
@@ -73,40 +49,16 @@ nextLink: /docs/forms/checkbox/
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/dist/tippy.css" />
 <div class="flex justify-center space-x-5">
   <span x-data="{ tooltip: 'This is a top tooltip.' }">
-    <button
-      type="button"
-      x-tooltip="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Tooltip on top
-    </button>
+    <button type="button" x-tooltip="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Tooltip on top</button>
   </span>
   <span x-data="{ tooltip: 'This is a right tooltip.' }">
-    <button
-      type="button"
-      x-tooltip.placement.right="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Tooltip on right
-    </button>
+    <button type="button" x-tooltip.placement.right="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Tooltip on right</button>
   </span>
   <span x-data="{ tooltip: 'This is a bottom tooltip.' }">
-    <button
-      type="button"
-      x-tooltip.placement.bottom="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Tooltip on bottom
-    </button>
+    <button type="button" x-tooltip.placement.bottom="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Tooltip on bottom</button>
   </span>
   <span x-data="{ tooltip: 'This is a left tooltip.' }">
-    <button
-      type="button"
-      x-tooltip.placement.left="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Tooltip on left
-    </button>
+    <button type="button" x-tooltip.placement.left="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Tooltip on left</button>
   </span>
 </div>
 {{< /code >}}
@@ -117,22 +69,10 @@ nextLink: /docs/forms/checkbox/
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/dist/tippy.css" />
 <div class="flex justify-center space-x-5">
   <span x-data="{ tooltip: 'This is a hover tooltip.' }">
-    <button
-      type="button"
-      x-tooltip="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Tooltip hover
-    </button>
+    <button type="button" x-tooltip="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Tooltip hover</button>
   </span>
   <span x-data="{ tooltip: 'This is a click tooltip.' }">
-    <button
-      type="button"
-      x-tooltip.on.click="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Tooltip click
-    </button>
+    <button type="button" x-tooltip.on.click="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Tooltip click</button>
   </span>
 </div>
 {{< /code >}}
@@ -146,40 +86,16 @@ nextLink: /docs/forms/checkbox/
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/animations/perspective.css" />
 <div class="flex justify-center space-x-5">
   <span x-data="{ tooltip: 'This is a fade tooltip.' }">
-    <button
-      type="button"
-      x-tooltip="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Fade
-    </button>
+    <button type="button" x-tooltip="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Fade</button>
   </span>
   <span x-data="{ tooltip: 'This is a shift away tooltip.' }">
-    <button
-      type="button"
-      x-tooltip.animation.shift-away="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Shift away
-    </button>
+    <button type="button" x-tooltip.animation.shift-away="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Shift away</button>
   </span>
   <span x-data="{ tooltip: 'This is a scale tooltip.' }">
-    <button
-      type="button"
-      x-tooltip.animation.scale="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Scale
-    </button>
+    <button type="button" x-tooltip.animation.scale="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Scale</button>
   </span>
   <span x-data="{ tooltip: 'This is a perspective tooltip.' }">
-    <button
-      type="button"
-      x-tooltip.animation.perspective="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Perspective
-    </button>
+    <button type="button" x-tooltip.animation.perspective="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Perspective</button>
   </span>
 </div>
 {{< /code >}}
@@ -190,13 +106,7 @@ nextLink: /docs/forms/checkbox/
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/dist/tippy.css" />
 <div class="flex justify-center space-x-5">
   <span x-data="{ tooltip: 'This is a tooltip.' }">
-    <button
-      type="button"
-      x-tooltip.arrowless="tooltip"
-      class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"
-    >
-      Button
-    </button>
+    <button type="button" x-tooltip.arrowless="tooltip" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400">Button</button>
   </span>
 </div>
 {{< /code >}}

@@ -17,88 +17,31 @@ nextLink: /docs/components/table/
   <div class="border-b border-b-gray-100">
     <ul class="-mb-px flex items-center gap-4 text-sm font-medium">
       <li>
-        <a
-          @click="activeTab = 0"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-primary-700 hover:text-primary-700"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 0 }"
-        >
-          Profile</a
-        >
+        <a @click="activeTab = 0" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-primary-700 hover:text-primary-700" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 0 }"> Profile</a>
       </li>
       <li>
-        <a
-          @click="activeTab = 1"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 1 }"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"
-        >
-          Preferences</a
-        >
+        <a @click="activeTab = 1" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 1 }" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"> Preferences</a>
       </li>
       <li>
-        <a
-          @click="activeTab = 2"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-primary-700 hover:text-primary-700"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 2 }"
-        >
+        <a @click="activeTab = 2" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-primary-700 hover:text-primary-700" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 2 }">
           Notifications
           <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-500"> 8 </span></a
         >
       </li>
       <li>
-        <a
-          @click="activeTab = 3"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-primary-700 hover:text-primary-700"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 3 }"
-        >
-          Applications</a
-        >
+        <a @click="activeTab = 3" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-primary-700 hover:text-primary-700" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 3 }"> Applications</a>
       </li>
       <li>
-        <a
-          @click="activeTab = 4"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-primary-700 hover:text-primary-700"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 4 }"
-          >API</a
-        >
+        <a @click="activeTab = 4" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-primary-700 hover:text-primary-700" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 4 }">API</a>
       </li>
     </ul>
   </div>
   <div class="py-3">
-    <div
-      :class="{ '!block': activeTab === 0 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 0"
-      class="hidden"
-    >
-      Tab content 1
-    </div>
-    <div
-      :class="{ '!block': activeTab === 1 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 1"
-      class="hidden"
-    >
-      Tab content 2
-    </div>
-    <div
-      :class="{ '!block': activeTab === 2 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 2"
-      class="hidden"
-    >
-      Tab content 3
-    </div>
-    <div
-      :class="{ '!block': activeTab === 3 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 3"
-      class="hidden"
-    >
-      Tab content 4
-    </div>
-    <div
-      :class="{ '!block': activeTab === 4 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 4"
-      class="hidden"
-    >
-      Tab content 5
-    </div>
+    <div :class="{ '!block': activeTab === 0 }" x-show.transition.in.opacity.duration.600="activeTab === 0" class="hidden">Tab content 1</div>
+    <div :class="{ '!block': activeTab === 1 }" x-show.transition.in.opacity.duration.600="activeTab === 1" class="hidden">Tab content 2</div>
+    <div :class="{ '!block': activeTab === 2 }" x-show.transition.in.opacity.duration.600="activeTab === 2" class="hidden">Tab content 3</div>
+    <div :class="{ '!block': activeTab === 3 }" x-show.transition.in.opacity.duration.600="activeTab === 3" class="hidden">Tab content 4</div>
+    <div :class="{ '!block': activeTab === 4 }" x-show.transition.in.opacity.duration.600="activeTab === 4" class="hidden">Tab content 5</div>
   </div>
 </div>
 {{< /code >}}
@@ -108,83 +51,43 @@ nextLink: /docs/components/table/
   <div class="border-b border-b-gray-100">
     <ul class="-mb-px flex items-center gap-4 text-sm font-medium">
       <li>
-        <a
-          @click="activeTab = 0"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 0 }"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"
-        >
+        <a @click="activeTab = 0" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 0 }" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-            <path
-              fill-rule="evenodd"
-              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z"
-              clip-rule="evenodd"
-            />
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z" clip-rule="evenodd" />
           </svg>
           Profile</a
         >
       </li>
       <li>
-        <a
-          @click="activeTab = 1"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 1 }"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"
-        >
+        <a @click="activeTab = 1" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 1 }" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-            <path
-              fill-rule="evenodd"
-              d="M3.5 2A1.5 1.5 0 002 3.5V15a3 3 0 106 0V3.5A1.5 1.5 0 006.5 2h-3zm11.753 6.99L9.5 14.743V6.257l1.51-1.51a1.5 1.5 0 012.122 0l2.121 2.121a1.5 1.5 0 010 2.122zM8.364 18H16.5a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5h-2.136l-6 6zM5 16a1 1 0 100-2 1 1 0 000 2z"
-              clip-rule="evenodd"
-            />
+            <path fill-rule="evenodd" d="M3.5 2A1.5 1.5 0 002 3.5V15a3 3 0 106 0V3.5A1.5 1.5 0 006.5 2h-3zm11.753 6.99L9.5 14.743V6.257l1.51-1.51a1.5 1.5 0 012.122 0l2.121 2.121a1.5 1.5 0 010 2.122zM8.364 18H16.5a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5h-2.136l-6 6zM5 16a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
           </svg>
 
           Preferences</a
         >
       </li>
       <li>
-        <a
-          @click="activeTab = 2"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 2 }"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"
-        >
+        <a @click="activeTab = 2" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 2 }" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-            <path
-              fill-rule="evenodd"
-              d="M10 2a6 6 0 00-6 6c0 1.887-.454 3.665-1.257 5.234a.75.75 0 00.515 1.076 32.91 32.91 0 003.256.508 3.5 3.5 0 006.972 0 32.903 32.903 0 003.256-.508.75.75 0 00.515-1.076A11.448 11.448 0 0116 8a6 6 0 00-6-6zM8.05 14.943a33.54 33.54 0 003.9 0 2 2 0 01-3.9 0z"
-              clip-rule="evenodd"
-            />
+            <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 1.887-.454 3.665-1.257 5.234a.75.75 0 00.515 1.076 32.91 32.91 0 003.256.508 3.5 3.5 0 006.972 0 32.903 32.903 0 003.256-.508.75.75 0 00.515-1.076A11.448 11.448 0 0116 8a6 6 0 00-6-6zM8.05 14.943a33.54 33.54 0 003.9 0 2 2 0 01-3.9 0z" clip-rule="evenodd" />
           </svg>
           Notifications
           <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-500"> 8 </span></a
         >
       </li>
       <li>
-        <a
-          @click="activeTab = 3"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 3 }"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"
-        >
+        <a @click="activeTab = 3" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 3 }" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-            <path
-              fill-rule="evenodd"
-              d="M4.25 2A2.25 2.25 0 002 4.25v2.5A2.25 2.25 0 004.25 9h2.5A2.25 2.25 0 009 6.75v-2.5A2.25 2.25 0 006.75 2h-2.5zm0 9A2.25 2.25 0 002 13.25v2.5A2.25 2.25 0 004.25 18h2.5A2.25 2.25 0 009 15.75v-2.5A2.25 2.25 0 006.75 11h-2.5zm9-9A2.25 2.25 0 0011 4.25v2.5A2.25 2.25 0 0013.25 9h2.5A2.25 2.25 0 0018 6.75v-2.5A2.25 2.25 0 0015.75 2h-2.5zm0 9A2.25 2.25 0 0011 13.25v2.5A2.25 2.25 0 0013.25 18h2.5A2.25 2.25 0 0018 15.75v-2.5A2.25 2.25 0 0015.75 11h-2.5z"
-              clip-rule="evenodd"
-            />
+            <path fill-rule="evenodd" d="M4.25 2A2.25 2.25 0 002 4.25v2.5A2.25 2.25 0 004.25 9h2.5A2.25 2.25 0 009 6.75v-2.5A2.25 2.25 0 006.75 2h-2.5zm0 9A2.25 2.25 0 002 13.25v2.5A2.25 2.25 0 004.25 18h2.5A2.25 2.25 0 009 15.75v-2.5A2.25 2.25 0 006.75 11h-2.5zm9-9A2.25 2.25 0 0011 4.25v2.5A2.25 2.25 0 0013.25 9h2.5A2.25 2.25 0 0018 6.75v-2.5A2.25 2.25 0 0015.75 2h-2.5zm0 9A2.25 2.25 0 0011 13.25v2.5A2.25 2.25 0 0013.25 18h2.5A2.25 2.25 0 0018 15.75v-2.5A2.25 2.25 0 0015.75 11h-2.5z" clip-rule="evenodd" />
           </svg>
           Applications</a
         >
       </li>
       <li>
-        <a
-          @click="activeTab = 4"
-          :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 4 }"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"
-        >
+        <a @click="activeTab = 4" :class="{ 'relative text-primary-700  after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700': activeTab === 4 }" class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-            <path
-              fill-rule="evenodd"
-              d="M10.362 1.093a.75.75 0 00-.724 0L2.523 5.018 10 9.143l7.477-4.125-7.115-3.925zM18 6.443l-7.25 4v8.25l6.862-3.786A.75.75 0 0018 14.25V6.443zm-8.75 12.25v-8.25l-7.25-4v7.807a.75.75 0 00.388.657l6.862 3.786z"
-              clip-rule="evenodd"
-            />
+            <path fill-rule="evenodd" d="M10.362 1.093a.75.75 0 00-.724 0L2.523 5.018 10 9.143l7.477-4.125-7.115-3.925zM18 6.443l-7.25 4v8.25l6.862-3.786A.75.75 0 0018 14.25V6.443zm-8.75 12.25v-8.25l-7.25-4v7.807a.75.75 0 00.388.657l6.862 3.786z" clip-rule="evenodd" />
           </svg>
 
           API</a
@@ -193,41 +96,11 @@ nextLink: /docs/components/table/
     </ul>
   </div>
   <div class="py-3">
-    <div
-      :class="{ '!block': activeTab === 0 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 0"
-      class="hidden"
-    >
-      Tab content 1
-    </div>
-    <div
-      :class="{ '!block': activeTab === 1 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 1"
-      class="hidden"
-    >
-      Tab content 2
-    </div>
-    <div
-      :class="{ '!block': activeTab === 2 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 2"
-      class="hidden"
-    >
-      Tab content 3
-    </div>
-    <div
-      :class="{ '!block': activeTab === 3 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 3"
-      class="hidden"
-    >
-      Tab content 4
-    </div>
-    <div
-      :class="{ '!block': activeTab === 4 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 4"
-      class="hidden"
-    >
-      Tab content 5
-    </div>
+    <div :class="{ '!block': activeTab === 0 }" x-show.transition.in.opacity.duration.600="activeTab === 0" class="hidden">Tab content 1</div>
+    <div :class="{ '!block': activeTab === 1 }" x-show.transition.in.opacity.duration.600="activeTab === 1" class="hidden">Tab content 2</div>
+    <div :class="{ '!block': activeTab === 2 }" x-show.transition.in.opacity.duration.600="activeTab === 2" class="hidden">Tab content 3</div>
+    <div :class="{ '!block': activeTab === 3 }" x-show.transition.in.opacity.duration.600="activeTab === 3" class="hidden">Tab content 4</div>
+    <div :class="{ '!block': activeTab === 4 }" x-show.transition.in.opacity.duration.600="activeTab === 4" class="hidden">Tab content 5</div>
   </div>
 </div>
 {{< /code >}}
@@ -236,88 +109,30 @@ nextLink: /docs/components/table/
 <div x-data="{ activeTab:  0 }">
   <ul class="flex items-center gap-2 text-sm font-medium">
     <li>
-      <a
-        @click="activeTab = 0"
-        class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700"
-        :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 0 }"
-      >
-        Profile</a
-      >
+      <a @click="activeTab = 0" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700" :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 0 }"> Profile</a>
     </li>
     <li>
-      <a
-        @click="activeTab = 1"
-        class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700"
-        :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 1 }"
-      >
-        Preferences</a
-      >
+      <a @click="activeTab = 1" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700" :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 1 }"> Preferences</a>
     </li>
     <li>
-      <a
-        @click="activeTab = 2"
-        class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700"
-        :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 2 }"
-      >
+      <a @click="activeTab = 2" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700" :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 2 }">
         Notifications
         <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-500"> 8 </span></a
       >
     </li>
     <li>
-      <a
-        @click="activeTab = 3"
-        class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700"
-        :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 3 }"
-      >
-        Applications</a
-      >
+      <a @click="activeTab = 3" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700" :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 3 }"> Applications</a>
     </li>
     <li>
-      <a
-        @click="activeTab = 4"
-        class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700"
-        :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 4 }"
-      >
-        API</a
-      >
+      <a @click="activeTab = 4" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:text-gray-700" :class="{ 'bg-gray-100 text-gray-700 hover:bg-gray-100': activeTab === 4 }"> API</a>
     </li>
   </ul>
   <div class="py-3">
-    <div
-      :class="{ '!block': activeTab === 0 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 0"
-      class="hidden"
-    >
-      Tab content 1
-    </div>
-    <div
-      :class="{ '!block': activeTab === 1 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 1"
-      class="hidden"
-    >
-      Tab content 2
-    </div>
-    <div
-      :class="{ '!block': activeTab === 2 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 2"
-      class="hidden"
-    >
-      Tab content 3
-    </div>
-    <div
-      :class="{ '!block': activeTab === 3 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 3"
-      class="hidden"
-    >
-      Tab content 4
-    </div>
-    <div
-      :class="{ '!block': activeTab === 4 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 4"
-      class="hidden"
-    >
-      Tab content 5
-    </div>
+    <div :class="{ '!block': activeTab === 0 }" x-show.transition.in.opacity.duration.600="activeTab === 0" class="hidden">Tab content 1</div>
+    <div :class="{ '!block': activeTab === 1 }" x-show.transition.in.opacity.duration.600="activeTab === 1" class="hidden">Tab content 2</div>
+    <div :class="{ '!block': activeTab === 2 }" x-show.transition.in.opacity.duration.600="activeTab === 2" class="hidden">Tab content 3</div>
+    <div :class="{ '!block': activeTab === 3 }" x-show.transition.in.opacity.duration.600="activeTab === 3" class="hidden">Tab content 4</div>
+    <div :class="{ '!block': activeTab === 4 }" x-show.transition.in.opacity.duration.600="activeTab === 4" class="hidden">Tab content 5</div>
   </div>
 </div>
 {{< /code >}}
@@ -326,92 +141,30 @@ nextLink: /docs/components/table/
 <div x-data="{ activeTab:  0 }">
   <ul class="flex items-center gap-2 text-sm font-medium">
     <li>
-      <a
-        @click="activeTab = 0"
-        :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 0 }"
-        class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50  hover:text-primary-700"
-      >
-        Profile</a
-      >
+      <a @click="activeTab = 0" :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 0 }" class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50  hover:text-primary-700"> Profile</a>
     </li>
     <li>
-      <a
-        @click="activeTab = 1"
-        :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 1 }"
-        class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50 hover:text-primary-700"
-      >
-        Preferences</a
-      >
+      <a @click="activeTab = 1" :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 1 }" class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50 hover:text-primary-700"> Preferences</a>
     </li>
     <li>
-      <a
-        @click="activeTab = 2"
-        :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 2 }"
-        class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50 hover:text-primary-700"
-      >
+      <a @click="activeTab = 2" :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 2 }" class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50 hover:text-primary-700">
         Notifications
-        <span
-          class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-500 group-hover:bg-primary-100 group-hover:text-primary-700"
-        >
-          8
-        </span></a
+        <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-500 group-hover:bg-primary-100 group-hover:text-primary-700"> 8 </span></a
       >
     </li>
     <li>
-      <a
-        @click="activeTab = 3"
-        :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 3 }"
-        class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50 hover:text-primary-700"
-      >
-        Applications</a
-      >
+      <a @click="activeTab = 3" :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 3 }" class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50 hover:text-primary-700"> Applications</a>
     </li>
     <li>
-      <a
-        @click="activeTab = 4"
-        :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 4 }"
-        class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50 hover:text-primary-700"
-      >
-        API</a
-      >
+      <a @click="activeTab = 4" :class="{ 'bg-primary-100 text-primary-700 hover:!bg-primary-100': activeTab === 4 }" class="relative inline-flex cursor-pointer items-center gap-2 rounded-lg  px-3 py-2 hover:bg-primary-50 hover:text-primary-700"> API</a>
     </li>
   </ul>
   <div class="py-3">
-    <div
-      :class="{ '!block': activeTab === 0 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 0"
-      class="hidden"
-    >
-      Tab content 1
-    </div>
-    <div
-      :class="{ '!block': activeTab === 1 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 1"
-      class="hidden"
-    >
-      Tab content 2
-    </div>
-    <div
-      :class="{ '!block': activeTab === 2 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 2"
-      class="hidden"
-    >
-      Tab content 3
-    </div>
-    <div
-      :class="{ '!block': activeTab === 3 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 3"
-      class="hidden"
-    >
-      Tab content 4
-    </div>
-    <div
-      :class="{ '!block': activeTab === 4 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 4"
-      class="hidden"
-    >
-      Tab content 5
-    </div>
+    <div :class="{ '!block': activeTab === 0 }" x-show.transition.in.opacity.duration.600="activeTab === 0" class="hidden">Tab content 1</div>
+    <div :class="{ '!block': activeTab === 1 }" x-show.transition.in.opacity.duration.600="activeTab === 1" class="hidden">Tab content 2</div>
+    <div :class="{ '!block': activeTab === 2 }" x-show.transition.in.opacity.duration.600="activeTab === 2" class="hidden">Tab content 3</div>
+    <div :class="{ '!block': activeTab === 3 }" x-show.transition.in.opacity.duration.600="activeTab === 3" class="hidden">Tab content 4</div>
+    <div :class="{ '!block': activeTab === 4 }" x-show.transition.in.opacity.duration.600="activeTab === 4" class="hidden">Tab content 5</div>
   </div>
 </div>
 {{< /code >}}
@@ -421,89 +174,31 @@ nextLink: /docs/components/table/
   <div class="overflow-hidden rounded-xl border border-gray-100 bg-gray-50 p-1">
     <ul class="flex items-center gap-2 text-sm font-medium">
       <li>
-        <a
-          @click="activeTab = 0"
-          :class="{ 'bg-white shadow text-gray-700': activeTab === 0 }"
-          class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow"
-        >
-          Profile</a
-        >
+        <a @click="activeTab = 0" :class="{ 'bg-white shadow text-gray-700': activeTab === 0 }" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow"> Profile</a>
       </li>
       <li>
-        <a
-          @click="activeTab = 1"
-          :class="{ 'bg-white shadow text-gray-700': activeTab === 1 }"
-          class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow"
-        >
-          Preferences</a
-        >
+        <a @click="activeTab = 1" :class="{ 'bg-white shadow text-gray-700': activeTab === 1 }" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow"> Preferences</a>
       </li>
       <li>
-        <a
-          @click="activeTab = 2"
-          :class="{ 'bg-white shadow text-gray-700': activeTab === 2 }"
-          class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow"
-        >
+        <a @click="activeTab = 2" :class="{ 'bg-white shadow text-gray-700': activeTab === 2 }" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow">
           Notifications
           <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-semibold "> 8 </span></a
         >
       </li>
       <li>
-        <a
-          @click="activeTab = 3"
-          :class="{ 'bg-white shadow text-gray-700': activeTab === 3 }"
-          class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow"
-        >
-          Applications</a
-        >
+        <a @click="activeTab = 3" :class="{ 'bg-white shadow text-gray-700': activeTab === 3 }" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow"> Applications</a>
       </li>
       <li>
-        <a
-          @click="activeTab = 4"
-          :class="{ 'bg-white shadow text-gray-700': activeTab === 4 }"
-          class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow"
-        >
-          API</a
-        >
+        <a @click="activeTab = 4" :class="{ 'bg-white shadow text-gray-700': activeTab === 4 }" class="inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white hover:text-gray-700 hover:shadow"> API</a>
       </li>
     </ul>
   </div>
   <div class="py-3">
-    <div
-      :class="{ '!block': activeTab === 0 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 0"
-      class="hidden"
-    >
-      Tab content 1
-    </div>
-    <div
-      :class="{ '!block': activeTab === 1 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 1"
-      class="hidden"
-    >
-      Tab content 2
-    </div>
-    <div
-      :class="{ '!block': activeTab === 2 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 2"
-      class="hidden"
-    >
-      Tab content 3
-    </div>
-    <div
-      :class="{ '!block': activeTab === 3 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 3"
-      class="hidden"
-    >
-      Tab content 4
-    </div>
-    <div
-      :class="{ '!block': activeTab === 4 }"
-      x-show.transition.in.opacity.duration.600="activeTab === 4"
-      class="hidden"
-    >
-      Tab content 5
-    </div>
+    <div :class="{ '!block': activeTab === 0 }" x-show.transition.in.opacity.duration.600="activeTab === 0" class="hidden">Tab content 1</div>
+    <div :class="{ '!block': activeTab === 1 }" x-show.transition.in.opacity.duration.600="activeTab === 1" class="hidden">Tab content 2</div>
+    <div :class="{ '!block': activeTab === 2 }" x-show.transition.in.opacity.duration.600="activeTab === 2" class="hidden">Tab content 3</div>
+    <div :class="{ '!block': activeTab === 3 }" x-show.transition.in.opacity.duration.600="activeTab === 3" class="hidden">Tab content 4</div>
+    <div :class="{ '!block': activeTab === 4 }" x-show.transition.in.opacity.duration.600="activeTab === 4" class="hidden">Tab content 5</div>
   </div>
 </div>
 {{< /code >}}
@@ -513,17 +208,10 @@ nextLink: /docs/components/table/
   <div class="border-b border-b-gray-100">
     <ul class="-mb-px flex items-center gap-4 text-sm font-medium">
       <li class="flex-1">
-        <a
-          href="#"
-          class="relative flex items-center justify-center gap-2 px-1 py-3 text-primary-700 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700 hover:text-primary-700"
-        >
-          Profile</a
-        >
+        <a href="#" class="relative flex items-center justify-center gap-2 px-1 py-3 text-primary-700 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary-700 hover:text-primary-700"> Profile</a>
       </li>
       <li class="flex-1">
-        <a href="#" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700">
-          Preferences</a
-        >
+        <a href="#" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"> Preferences</a>
       </li>
       <li class="flex-1">
         <a href="#" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700">
@@ -532,104 +220,54 @@ nextLink: /docs/components/table/
         >
       </li>
       <li class="flex-1">
-        <a href="#" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700">
-          Applications</a
-        >
+        <a href="#" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"> Applications</a>
       </li>
       <li class="flex-1">
-        <a href="#" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700"
-          >API</a
-        >
+        <a href="#" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-primary-700">API</a>
       </li>
     </ul>
   </div>
   <div>
     <ul class="flex items-center gap-2 text-sm font-medium">
       <li class="flex-1">
-        <a
-          href="#"
-          class="relative flex items-center justify-center gap-2 rounded-lg bg-gray-100 px-3 py-2 text-gray-700 hover:text-gray-700"
-        >
-          Profile</a
-        >
+        <a href="#" class="relative flex items-center justify-center gap-2 rounded-lg bg-gray-100 px-3 py-2 text-gray-700 hover:text-gray-700"> Profile</a>
       </li>
       <li class="flex-1">
-        <a
-          href="#"
-          class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-        >
-          Preferences</a
-        >
+        <a href="#" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"> Preferences</a>
       </li>
       <li class="flex-1">
-        <a
-          href="#"
-          class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-        >
+        <a href="#" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
           Notifications
           <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-500"> 8 </span></a
         >
       </li>
       <li class="flex-1">
-        <a
-          href="#"
-          class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-        >
-          Applications</a
-        >
+        <a href="#" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"> Applications</a>
       </li>
       <li class="flex-1">
-        <a
-          href="#"
-          class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-        >
-          API</a
-        >
+        <a href="#" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"> API</a>
       </li>
     </ul>
   </div>
   <div class="overflow-hidden rounded-xl border border-gray-100 bg-gray-50 p-1">
     <ul class="flex items-center gap-2 text-sm font-medium">
       <li class="flex-1">
-        <a
-          href="#"
-          class="text-gra relative flex items-center justify-center gap-2 rounded-lg bg-white px-3 py-2 shadow hover:bg-white hover:text-gray-700"
-        >
-          Profile</a
-        >
+        <a href="#" class="text-gra relative flex items-center justify-center gap-2 rounded-lg bg-white px-3 py-2 shadow hover:bg-white hover:text-gray-700"> Profile</a>
       </li>
       <li class="flex-1">
-        <a
-          href="#"
-          class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-white hover:text-gray-700 hover:shadow"
-        >
-          Preferences</a
-        >
+        <a href="#" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-white hover:text-gray-700 hover:shadow"> Preferences</a>
       </li>
       <li class="flex-1">
-        <a
-          href="#"
-          class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-white hover:text-gray-700 hover:shadow"
-        >
+        <a href="#" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-white hover:text-gray-700 hover:shadow">
           Notifications
           <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-500"> 8 </span></a
         >
       </li>
       <li class="flex-1">
-        <a
-          href="#"
-          class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-white hover:text-gray-700 hover:shadow"
-        >
-          Applications</a
-        >
+        <a href="#" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-white hover:text-gray-700 hover:shadow"> Applications</a>
       </li>
       <li class="flex-1">
-        <a
-          href="#"
-          class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-white hover:text-gray-700 hover:shadow"
-        >
-          API</a
-        >
+        <a href="#" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-gray-500 hover:bg-white hover:text-gray-700 hover:shadow"> API</a>
       </li>
     </ul>
   </div>
