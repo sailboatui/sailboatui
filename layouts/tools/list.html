@@ -4,9 +4,7 @@
     <div class="container mx-auto px-6 2xl:px-32">
       <div>
         <h1 class="text-3xl font-bold capitalize text-secondary-900">
-          <a href="https://github.com/sailboatui/best-tailwindcss" target="_blank" class=" hover:text-primary-500"
-            >{{ .Title }}</a
-          >
+          <a href="https://github.com/sailboatui/best-tailwindcss" target="_blank" class=" hover:text-primary-500">{{ .Title }}</a>
         </h1>
         <p class="mt-4">{{ .Params.description }}</p>
       </div>
@@ -18,12 +16,7 @@
             </h3>
             <div class="mt-5 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
               {{ range .links }}
-                <a
-                  class="group overflow-hidden rounded-2xl border border-secondary-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-sm"
-                  href="{{ .url }}"
-                  target="_blank"
-                  title="{{ .title }}"
-                >
+                <a class="group overflow-hidden rounded-2xl border border-secondary-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-sm" href="{{ .url }}" target="_blank" title="{{ .title }}">
                   <div class="flex items-center gap-2">
                     <div class="flex-none overflow-hidden rounded-lg border border-secondary-100 bg-white">
                       <img class="h-8 w-8 " src="{{ .logo }}" alt="{{ .title }}" />

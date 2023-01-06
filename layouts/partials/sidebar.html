@@ -1,30 +1,13 @@
-<aside
-  id="aside"
-  class="sticky inset-0 right-auto z-20 -ml-6 -mr-6 shrink-0 overflow-y-auto border-y border-y-gray-100 bg-white px-6 lg:fixed lg:top-24 lg:left-[max(0px,calc(50%-30.5rem))] lg:m-0 lg:block lg:h-[calc(100vh-100px)] lg:w-64 lg:border-none lg:bg-transparent lg:px-0 xl:left-[max(0px,calc(50%-38.5rem))] 2xl:left-[max(0px,calc(50%-40rem))]"
->
+<aside id="aside" class="sticky inset-0 right-auto z-20 -ml-6 -mr-6 shrink-0 overflow-y-auto border-y border-y-gray-100 bg-white px-6 lg:fixed lg:top-24 lg:left-[max(0px,calc(50%-30.5rem))] lg:m-0 lg:block lg:h-[calc(100vh-100px)] lg:w-64 lg:border-none lg:bg-transparent lg:px-0 xl:left-[max(0px,calc(50%-38.5rem))] 2xl:left-[max(0px,calc(50%-40rem))]">
   <div class="flex items-center justify-between py-2.5 lg:hidden">
     <a id="toggleTOC" class="flex items-center gap-2 text-xs"
-      ><svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="h-6 w-6"
-      >
+      ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
       </svg>
       Menu
     </a>
     <a href="#" class="text-sm">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="h-4 w-4"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
       </svg>
     </a>
@@ -42,13 +25,9 @@
                   <li>
                     {{ if $currentPage.IsMenuCurrent "docs" . }}
 
-                      <a class="block rounded-lg bg-primary-50 p-2 font-bold text-primary-500" href="{{ .URL }}"
-                        >{{ .Name }}</a
-                      >
+                      <a class="block rounded-lg bg-primary-50 p-2 font-bold text-primary-500" href="{{ .URL }}">{{ .Name }}</a>
                     {{ else }}
-                      <a class="block rounded-lg p-2 hover:bg-secondary-50 hover:text-secondary-900" href="{{ .URL }}"
-                        >{{ .Name }}</a
-                      >
+                      <a class="block rounded-lg p-2 hover:bg-secondary-50 hover:text-secondary-900" href="{{ .URL }}">{{ .Name }}</a>
                     {{ end }}
                   </li>
                 {{ end }}
