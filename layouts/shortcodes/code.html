@@ -1,15 +1,15 @@
 <section x-data="{ activeTab:  0 }" class="mt-8 max-w-none">
-  <div class="not-prose flex items-center justify-between">
-    <h2 class="relative truncate pr-4 text-lg font-medium text-secondary-900">
+  <div class="not-prose flex items-center justify-between gap-4">
+    <h2 class="relative truncate text-lg font-medium text-secondary-900">
       <span class="absolute -top-24" id="{{ .Get "ctitle" }}"></span>
       <a href="#{{ .Get "ctitle" }}" class="group flex items-center gap-1"
-        >{{ .Get "ctitle" }}
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 text-primary-500 opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+        ><div class="truncate">{{ .Get "ctitle" }}</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 text-primary-500 opacity-0 transition-opacity duration-200 ease-in-out md:group-hover:opacity-100">
           <path fill-rule="evenodd" d="M9.493 2.853a.75.75 0 00-1.486-.205L7.545 6H4.198a.75.75 0 000 1.5h3.14l-.69 5H3.302a.75.75 0 000 1.5h3.14l-.435 3.148a.75.75 0 001.486.205L7.955 14h2.986l-.434 3.148a.75.75 0 001.486.205L12.456 14h3.346a.75.75 0 000-1.5h-3.14l.69-5h3.346a.75.75 0 000-1.5h-3.14l.435-3.147a.75.75 0 00-1.486-.205L12.045 6H9.059l.434-3.147zM8.852 7.5l-.69 5h2.986l.69-5H8.852z" clip-rule="evenodd" />
         </svg>
       </a>
     </h2>
-    <div class="flex items-center gap-4">
+    <div class="flex  items-center gap-4">
       <div class="overflow-hidden rounded-xl border border-gray-100 bg-gray-50 p-0.5">
         <ul class="flex items-center gap-2 text-sm font-medium text-gray-500">
           <li>
@@ -41,11 +41,11 @@
       {{ end }}
       {{ with $stylesheet }}
         <iframe
-          class="h-80 w-full overflow-hidden rounded-lg ring-1 ring-secondary-200"
+          class="h-64 w-full overflow-hidden rounded-lg ring-1 ring-secondary-200 md:h-80"
           srcdoc="<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel='stylesheet' type='text/css' href='{{ .RelPermalink }}' crossorigin='anonymous' /><script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js' defer integrity='sha512-y22y4rJ9d7NGoRLII5LVwUv0BfQKf6MpATy5ebVu/fbHdtJCxBpZRHZMHJv8VYl8scWjuwZcMPzwYk4sEoyL4A==' crossorigin='anonymous' referrerpolicy='no-referrer'></script></head>
                     <body class='antialiased bg-primary-50/20 text-secondary-500'>
                       <div class='flex items-center justify-center min-h-screen'>
-                        <div class='min-w-full p-6 mx-auto'>
+                        <div class='min-w-full p-3 md:p-6 mx-auto'>
                        {{ $Inner }}
                         </div>
                       </div>
