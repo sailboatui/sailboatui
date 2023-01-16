@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  Sailboat UI is a modern UI component library for Tailwind CSS
+  Sailboat UI is a modern UI component library for Tailwind CSS. Get started with 150+ open-source Tailwind CSS components, and make it easy to build your products.
 </p>
 
 ## Documentation
