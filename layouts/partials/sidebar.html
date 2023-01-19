@@ -20,14 +20,13 @@
           {{ if .HasChildren }}
             <li>
               <h5 class="p-2 font-medium text-secondary-900">{{ .Name }}</h5>
-              <ul class="mt-1 space-y-1">
+              <ul class="mt-1 space-y-0.5">
                 {{ range .Children }}
                   <li>
                     {{ if $currentPage.IsMenuCurrent "docs" . }}
-
-                      <a class="block rounded-lg bg-primary-50 p-2 font-bold text-primary-500" href="{{ .URL }}">{{ .Name }}</a>
+                      <a class="block rounded-lg  p-2 font-bold text-primary-500" href="{{ .URL }}">{{ .Name }}</a>
                     {{ else }}
-                      <a class="block rounded-lg p-2 hover:bg-secondary-50 hover:text-secondary-900" href="{{ .URL }}">{{ .Name }}</a>
+                      <a class="block rounded-lg p-2 hover:text-primary-500" href="{{ .URL }}">{{ .Name }}</a>
                     {{ end }}
                   </li>
                 {{ end }}
