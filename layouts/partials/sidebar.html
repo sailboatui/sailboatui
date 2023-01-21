@@ -1,6 +1,6 @@
-<aside id="aside" class="sticky inset-0 right-auto z-20 -ml-6 -mr-6 shrink-0 overflow-y-auto border-y border-y-gray-100 bg-white px-6 lg:fixed lg:top-24 lg:left-[max(0px,calc(50%-30.5rem))] lg:m-0 lg:block lg:h-[calc(100vh-100px)] lg:w-64 lg:border-none lg:bg-transparent lg:px-0 xl:left-[max(0px,calc(50%-38.5rem))] 2xl:left-[max(0px,calc(50%-40rem))]">
+<aside id="aside" class="sticky top-0 z-20 -mx-4 shrink-0 overflow-y-auto border-y border-y-gray-100 bg-white px-4 lg:top-24 lg:m-0 lg:block lg:h-[calc(100vh-96px)] lg:w-56 lg:border-none lg:bg-transparent lg:px-0 ">
   <div class="flex items-center justify-between py-2.5 lg:hidden">
-    <a id="toggleTOC" class="flex items-center gap-2 text-xs"
+    <a id="toggleDocMenu" class="flex items-center gap-2 text-xs"
       ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
       </svg>
@@ -12,21 +12,21 @@
       </svg>
     </a>
   </div>
-  <div class="-ml-2 hidden lg:m-0 lg:block lg:pb-10 lg:pr-4" id="TOC">
+  <div class="-ml-2 hidden lg:m-0 lg:block lg:pb-5 lg:pr-4" id="docMenu">
     <nav class="text-sm capitalize ">
-      <ul class="space-y-4">
+      <ul class="space-y-5">
         {{ $currentPage := . }}
         {{ range .Site.Menus.docs }}
           {{ if .HasChildren }}
             <li>
-              <h5 class="p-2 font-medium text-secondary-900">{{ .Name }}</h5>
-              <ul class="mt-1 space-y-0.5">
+              <h5 class="px-2 pb-2 font-medium text-secondary-900">{{ .Name }}</h5>
+              <ul>
                 {{ range .Children }}
                   <li>
                     {{ if $currentPage.IsMenuCurrent "docs" . }}
-                      <a class="block rounded-lg  p-2 font-bold text-primary-500" href="{{ .URL }}">{{ .Name }}</a>
+                      <a class="block rounded-md bg-primary-50 p-2 font-bold text-primary-500" href="{{ .URL }}">{{ .Name }}</a>
                     {{ else }}
-                      <a class="block rounded-lg p-2 hover:text-primary-500" href="{{ .URL }}">{{ .Name }}</a>
+                      <a class="block rounded-md p-2 hover:text-primary-500" href="{{ .URL }}">{{ .Name }}</a>
                     {{ end }}
                   </li>
                 {{ end }}
@@ -34,7 +34,7 @@
             </li>
           {{ else }}
             <li>
-              <h5 class="p-2 font-medium text-secondary-700">{{ .Name }}</h5>
+              <h5 class="px-2 pb-2 font-medium text-secondary-700">{{ .Name }}</h5>
             </li>
           {{ end }}
         {{ end }}
