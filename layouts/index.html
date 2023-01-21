@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ $heroBg := resources.Get "/images/hero-bg.png" }}
   <section class="bg-secondary-50 bg-cover py-20 md:py-40" style="background-image: url('  {{ $heroBg.RelPermalink }}')">
-    <div class="container mx-auto px-6 2xl:px-32">
+    <div class="mx-auto max-w-8xl px-4">
       <div class="text-center">
         <div>
           <h1 class="text-3xl font-extrabold text-secondary-900 md:text-6xl md:leading-tight">
@@ -20,7 +20,7 @@
   </section>
 
   <section class="py-20">
-    <div class="container mx-auto px-6 2xl:px-32">
+    <div class="mx-auto max-w-8xl px-4">
       <div class="text-center">
         <h2 class="text-4xl font-bold text-secondary-900">Components</h2>
         <h3 class="mt-4 md:text-lg">We will provide everything you can think of.</h3>

@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* doc  */
+
+.js-toc a {
+  @apply block;
+}
+
+.js-toc a:hover {
+  @apply text-secondary-900;
+}
+
+.js-toc .is-active-li > a {
+  @apply font-medium text-primary-500;
+}
+
+.js-toc .is-active-li a {
+  @apply relative;
+}
+
+.js-toc .is-active-li > a:before {
+  content: "";
+  @apply absolute -left-4 top-0 h-full w-0.5 bg-primary-500;
+}
+
+.js-toc ol ol {
+  @apply my-2 space-y-2;
+}
+
+.js-toc > ol {
+  @apply relative space-y-2;
+}
+
+.js-toc ol li {
+  @apply pl-4;
+}
+
+.js-toc ol ol .is-active-li > a:before {
+  @apply -left-8;
+}
+
+.js-toc > ol:before {
+  content: "";
+  @apply absolute left-0 bottom-0 h-full w-px bg-secondary-100;
+}

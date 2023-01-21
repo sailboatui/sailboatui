@@ -1,54 +1,45 @@
 {{ define "main" }}
   <section class="pt-14 lg:pt-24">
-    <div class="container mx-auto px-6 2xl:px-32">
-      <div class="relative w-full lg:flex">
-        {{ partial "sidebar" . }}
-        <div class="mt-4 w-full min-w-0 max-w-full lg:mt-0 lg:pl-72">
-          <p class="text-sm font-medium capitalize text-primary-500">{{ .Params.menu.docs.parent }}</p>
-          <h1 class="mt-1 text-3xl font-bold capitalize text-secondary-900">
-            {{ if .Params.components }}
-              Tailwind CSS
+    <div class="mx-auto max-w-8xl px-4 lg:flex">
+      {{ partial "sidebar" . }}
+      {{ partial "toc" . }}
+      <article class="mx-auto  mt-4 max-w-4xl flex-1 lg:mt-0 lg:px-6">
+        <p class="text-sm font-medium capitalize text-primary-500">{{ .Params.menu.docs.parent }}</p>
+        <h1 class="mt-1 text-3xl font-bold capitalize text-secondary-900">{{ if .Params.components }}Tailwind CSS{{ end }} {{ .Title }}</h1>
+        <p class="mt-2">{{ .Params.description }}</p>
+        <div class="js-toc-content prose mt-10 max-w-none prose-a:font-medium prose-a:decoration-primary-500 prose-a:underline-offset-2 hover:prose-a:text-primary-500 prose-pre:shadow-md">{{ .Content }}</div>
+        <div class="my-10 flex justify-between">
+          <div>
+            {{ if .Params.previous }}
+              <a class="flex items-center gap-1 font-medium capitalize hover:text-secondary-900" href="{{ .Params.previousLink }}"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                  <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                </svg>
+                {{ .Params.previous | truncate 50 "..." }}</a
+              >
             {{ end }}
-            {{ .Title }}
-          </h1>
-          <p class="mt-2">{{ .Params.description }}</p>
-          <div class="prose mt-10 max-w-none prose-a:font-medium prose-a:decoration-primary-500 prose-a:underline-offset-2 hover:prose-a:text-primary-500 prose-pre:shadow-md">
-            {{ .Content }}
           </div>
-          <div class="my-10 flex justify-between">
-            <div>
-              {{ if .Params.previous }}
-                <a class="flex items-center gap-1 font-medium capitalize hover:text-secondary-900" href="{{ .Params.previousLink }}"
-                  ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                    <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
-                  </svg>
-                  {{ .Params.previous | truncate 50 "..." }}</a
-                >
-              {{ end }}
-            </div>
-
-            <div>
-              {{ if .Params.next }}
-                <a class="flex items-center gap-1 font-medium capitalize hover:text-secondary-900" href="{{ .Params.nextLink }}"
-                  >{{ .Params.next | truncate 50 "..." }}
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                    <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
-                  </svg>
-                </a>
-              {{ end }}
-            </div>
+          <div>
+            {{ if .Params.next }}
+              <a class="flex items-center gap-1 font-medium capitalize hover:text-secondary-900" href="{{ .Params.nextLink }}"
+                >{{ .Params.next | truncate 50 "..." }}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                  <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            {{ end }}
           </div>
-          <footer class="mt-10">
-            <div class="container mx-auto">
-              <div class="border-t py-10 text-center">
-                Copyright © 2022 -
-                <span x-text="new Date().getFullYear()"></span>
-                Sailboat UI
-              </div>
-            </div>
-          </footer>
         </div>
-      </div>
+        <footer class="mt-10">
+          <div class="mx-auto max-w-8xl">
+            <div class="border-t py-10 text-center">
+              Copyright © 2022 -
+              <span x-text="new Date().getFullYear()"></span>
+              Sailboat UI
+            </div>
+          </div>
+        </footer>
+      </article>
     </div>
   </section>
   <style>
@@ -56,4 +47,14 @@
       display: none;
     }
   </style>
+  <script>
+    tocbot.init({
+      tocSelector: ".js-toc",
+      contentSelector: ".js-toc-content",
+      headingSelector: "h2, h3",
+      hasInnerContainers: true,
+      headingsOffset: 96,
+      scrollSmoothOffset: -96,
+    });
+  </script>
 {{ end }}

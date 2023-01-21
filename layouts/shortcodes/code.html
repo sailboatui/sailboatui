@@ -1,7 +1,7 @@
-<section x-data="{ activeTab:  0 }" class="mt-8 max-w-none">
+<section x-data="{ activeTab:  0 }" class="mt-10 max-w-none">
   <div class="not-prose flex items-center justify-between gap-4">
-    <h2 class="relative truncate text-lg font-medium text-secondary-900">
-      <span class="absolute -top-24" id="{{ .Get "ctitle"| urlize }}"></span>
+    <h2 class="relative truncate text-lg font-medium text-secondary-900" id="{{ .Get "ctitle"| urlize }}">
+      <span class="absolute -top-24"></span>
       <a href="#{{ .Get "ctitle"| urlize }}" class="group flex items-center gap-1"
         ><div class="truncate">{{ .Get "ctitle" }}</div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 text-primary-500 opacity-0 transition-opacity duration-200 ease-in-out md:group-hover:opacity-100">
@@ -34,6 +34,7 @@
   <div class="mt-4">
     <div :class="{ '!block': activeTab === 0 }" x-show.transition.in.opacity.duration.600="activeTab === 0" class="hidden">
       {{ $Inner := .Inner | safeHTMLAttr }}
+      {{ $wrapper := .Get "wrapper" }}
       {{ $isDev := eq hugo.Environment "development" }}
       {{ $stylesheet := resources.Get "css/sailboat.css" }}
       {{ if not $isDev }}
@@ -41,10 +42,10 @@
       {{ end }}
       {{ with $stylesheet }}
         <iframe
-          class="h-64 w-full overflow-hidden rounded-lg ring-1 ring-secondary-200 md:h-80"
+          class="w-full overflow-hidden rounded-lg ring-1 ring-secondary-200"
           srcdoc="<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel='stylesheet' type='text/css' href='{{ .RelPermalink }}' crossorigin='anonymous' /><script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js' defer integrity='sha512-y22y4rJ9d7NGoRLII5LVwUv0BfQKf6MpATy5ebVu/fbHdtJCxBpZRHZMHJv8VYl8scWjuwZcMPzwYk4sEoyL4A==' crossorigin='anonymous' referrerpolicy='no-referrer'></script></head>
                     <body class='antialiased text-secondary-500'>
-                      <div class='flex items-center justify-center min-h-screen'>
+                      <div class='flex items-center justify-center'>
                         <div class='min-w-full p-3 md:p-6 mx-auto'>
                        {{ $Inner }}
                         </div>

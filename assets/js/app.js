@@ -3,15 +3,17 @@ function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 // Get the header element on the page
-var header = document.querySelector("header");
+var header = document.querySelector(".home-header");
 function scrollTop() {
   if (!isMobile()) {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollTop > 0) {
-      header.classList.add("backdrop-blur", "bg-white/60", "shadow-sm");
-    } else {
-      // Otherwise, remove the background color
-      header.classList.remove("backdrop-blur", "bg-white/60", "shadow-sm");
+    if (header) {
+      if (scrollTop > 0) {
+        header.classList.add("backdrop-blur", "bg-white/60", "shadow-sm");
+      } else {
+        // Otherwise, remove the background color
+        header.classList.remove("backdrop-blur", "bg-white/60", "shadow-sm");
+      }
     }
   }
 }
@@ -48,11 +50,11 @@ function toggleMenu() {
   document.querySelector("body").classList.toggle("overflow-hidden");
 }
 
-// toggle TOC
-document.querySelector("#toggleTOC")?.addEventListener("click", toggleTOC);
+// toggle DocMenu
+document.querySelector("#toggleDocMenu")?.addEventListener("click", toggleDocMenu);
 
-function toggleTOC() {
-  document.querySelector("#TOC").classList.toggle("hidden");
+function toggleDocMenu() {
+  document.querySelector("#docMenu").classList.toggle("hidden");
   document.querySelector("#aside").classList.toggle("h-80");
 }
 
