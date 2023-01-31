@@ -1,4 +1,4 @@
-<aside id="aside" class="sticky top-0 z-20 -mx-4 shrink-0 overflow-y-auto border-y border-y-gray-100 bg-white px-4 lg:top-24 lg:m-0 lg:block lg:h-[calc(100vh-96px)] lg:w-56 lg:border-none lg:bg-transparent lg:px-0 ">
+<aside id="aside" class="sticky top-0 z-20 -mx-4 shrink-0 overflow-y-auto border-y border-y-gray-100 bg-white px-4 lg:top-40 lg:m-0 lg:block lg:h-[calc(100vh-160px)] lg:w-56 lg:border-none lg:bg-transparent lg:px-0 ">
   <div class="flex items-center justify-between py-2.5 lg:hidden">
     <a id="toggleDocMenu" class="flex items-center gap-2 text-xs"
       ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
@@ -13,7 +13,8 @@
     </a>
   </div>
   <div class="-ml-2 hidden lg:m-0 lg:block lg:pb-5 lg:pr-4" id="docMenu">
-    <nav class="text-sm capitalize ">
+    <div id="docsearch"></div>
+    <nav class="text-sm capitalize">
       <ul class="space-y-5">
         {{ $currentPage := . }}
         {{ range .Site.Menus.docs }}
