@@ -55,7 +55,7 @@ document.querySelector("#toggleDocMenu")?.addEventListener("click", toggleDocMen
 
 function toggleDocMenu() {
   document.querySelector("#docMenu").classList.toggle("hidden");
-  document.querySelector("#aside").classList.toggle("h-80");
+  document.querySelector("#aside").classList.toggle("h-96");
 }
 
 // Select all iframe elements
