@@ -61,12 +61,10 @@ function toggleDocMenu() {
 // Select all iframe elements
 const iframes = document.querySelectorAll("iframe");
 
-// Add a load event listener to each iframe
+// Add a load event listener the each iframe
 iframes.forEach((iframe) => {
   iframe.addEventListener("load", (event) => {
     const e = event;
-    const h = e.target.contentWindow.document.body.scrollHeight;
-    e.target.style.height = `${h}px`;
 
     // Get the parent element of the iframe
     const parent = e.target.parentNode;
@@ -81,5 +79,9 @@ iframes.forEach((iframe) => {
         event.preventDefault();
       });
     });
+
+    // Set the iframe's height based on its content
+    const h = e.target.contentWindow.document.body.scrollHeight;
+    e.target.style.height = `${h}px`;
   });
 });
