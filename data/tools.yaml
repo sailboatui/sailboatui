@@ -56,6 +56,10 @@
       logo: /logos/logo12.png
       url: https://usewindy.com/
       description: Copy elements from any website as a Tailwind CSS component
+    - title: Tailwind Grid Generator
+      logo: /logos/logo21.png
+      url: https://www.tailwindgen.com/
+      description: Drag and drop Tailwind CSS grid generator
 
 - taxonomy: Plugins
   links:
