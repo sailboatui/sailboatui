@@ -15,6 +15,13 @@
 
 For the full documentation, visit [sailboatui.com](https://sailboatui.com/).
 
+## Meet our sponsors
+
+| [MagickPen](https://magickpen.com/)| [OpenL](https://openl.io/)| [magickimg](https://magickimg.com/)|
+| --- | ------ | ------|
+| <a href="https://magickpen.com/"><img src="https://i.ibb.co/cYGPdFz/magickpen.png" alt="magickpen" border="0"></a> | <a href="https://openl.io/"><img src="https://i.ibb.co/cbSt5VF/openl.png" alt="openl" border="0"></a> | <a href="https://magickimg.com/"><img src="https://i.ibb.co/DYJbGm1/magickimg.png" alt="magickimg" border="0"></a> |
+| AI Writing Assistant, powered by ChatGPT | Amazing Translator, powered by AI | Boost Your images Powered by AI |
+
 ## Components
 
 <table>
